@@ -12,7 +12,6 @@ const schema = require('../schemas');
 const dev = process.env.NODE_ENV !== 'production';
 const port = parseInt(process.env.PORT, 10) || 8000;
 const app = nextApp({ dir: path.resolve(__dirname, '..'), dev });
-const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
   const server = new Koa();
@@ -25,6 +24,11 @@ app.prepare().then(() => {
       graphiql: true,
     }),
   );
+
+  router.get('*', async ctx => {
+    await app.render(ctx.req, ctx.res, '/');
+    ctx.respond = false;
+  });
 
   server.use(async (ctx, next) => {
     ctx.res.statusCode = 200;
