@@ -17,7 +17,9 @@ export default class Index extends React.Component {
               <h4>by Una</h4>
             </div>
 
-            <Button>我也要回家投票</Button>
+            <Button className={styles.button} type="primary">
+              我也要回家投票
+            </Button>
           </header>
         </Affix>
 

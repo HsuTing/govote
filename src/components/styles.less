@@ -1,7 +1,29 @@
+// overwrite antd
+:global(#__next) {
+  :global(.ant-btn) {
+    height: unset;
+  }
+
+  h2, h4 {
+    color: inherit;
+
+    &::selection {
+      background: inherit;
+    }
+  }
+}
+
+// pages
 .header {
+  display: flex;
+  justify-content: space-between;
   padding: 24px 50px;
   color: #ffffff;
   background: #2ed3e9;
+
+  .button {
+    padding: 12px 32px;
+  }
 }
 
 .owner {
@@ -10,13 +32,11 @@
   & > h2 {
     margin: 0px;
     font-size: 24px;
-    color: inherit;
   }
 
   & > h4 {
     margin: 0px;
     font-size: 12px;
-    color: inherit;
   }
 }
 

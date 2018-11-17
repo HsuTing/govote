@@ -40,6 +40,7 @@ module.exports = withLess({
               javascriptEnabled: true,
               modifyVars: {
                 'primary-color': '#fabf3e',
+                'border-radius-base': '0px',
               },
             },
           },
