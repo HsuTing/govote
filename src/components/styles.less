@@ -1,46 +1,81 @@
-// overwrite antd
 :global(#__next) {
+  // overwrite antd
   :global(.ant-btn) {
     height: unset;
   }
 
-  h2, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: inherit;
 
     &::selection {
       background: inherit;
     }
   }
-}
 
-// pages
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px 50px;
-  color: #ffffff;
-  background: #2ed3e9;
+  // pages
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 50px;
+    color: #ffffff;
+    background: #2ed3e9;
 
-  .button {
-    padding: 12px 32px;
+    .owner {
+      line-height: 1.5;
+
+      & > h2 {
+        margin: 0px;
+        font-size: 24px;
+      }
+
+      & > h4 {
+        margin: 0px;
+        font-size: 12px;
+      }
+    }
+
+    .button {
+      padding: 12px 32px;
+    }
   }
-}
 
-.owner {
-  line-height: 1.5;
+  .headerImg {
+    position: relative;
 
-  & > h2 {
-    margin: 0px;
-    font-size: 24px;
+    .info {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+
+      h1 {
+        margin: 0px;
+        font-size: 48px;
+      }
+
+      h4 {
+        margin: 34px 0px 70px;
+        font-size: 16px;
+      }
+
+      .button {
+        padding: 20px 50px;
+        font-size: 20px;
+      }
+    }
+
+    .map {
+      width: 100%;
+      background: #2ed3e9;
+    }
   }
-
-  & > h4 {
-    margin: 0px;
-    font-size: 12px;
-  }
-}
-
-.mapImg {
-  width: 100%;
-  background: #2ed3e9;
 }
