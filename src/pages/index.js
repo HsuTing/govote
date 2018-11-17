@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { fetchQuery, graphql } from 'react-relay';
-import { Affix, Button } from 'antd';
+import { Affix, Button, Row, Col } from 'antd';
 
 import MapImg from 'static/MapImg.svg';
 import styles from 'components/styles.less';
@@ -39,6 +39,49 @@ export default class Index extends React.Component {
           </div>
 
           <MapImg className={styles.map} />
+        </div>
+
+        <div className={styles.root}>
+          <Row gutter={16}>
+            {[
+              {
+                key: 'total',
+                title: '總投票人數',
+                value: '412,203',
+                unit: '人',
+              },
+              {
+                key: 'time',
+                title: '總旅途時間',
+                value: '2412.312',
+                unit: '小時',
+              },
+              {
+                key: 'price',
+                title: '總旅途費用',
+                value: '10,000,000',
+                unit: 'NTD',
+              },
+              {
+                key: 'distance',
+                title: '總旅途距離',
+                value: '100000.12',
+                unit: 'km',
+              },
+            ].map(({ key, title, value, unit }) => (
+              <Col key={key} span={6}>
+                <div className={styles.card}>
+                  <h3>{title}</h3>
+
+                  <p>
+                    {value}
+
+                    <font>{unit}</font>
+                  </p>
+                </div>
+              </Col>
+            ))}
+          </Row>
         </div>
       </>
     );

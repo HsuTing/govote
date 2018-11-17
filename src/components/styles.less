@@ -7,10 +7,14 @@
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  p,
+  font {
+    margin: 0px;
     color: inherit;
 
     &::selection {
+      color: inherit;
       background: inherit;
     }
   }
@@ -26,13 +30,11 @@
     .owner {
       line-height: 1.5;
 
-      & > h2 {
-        margin: 0px;
+      h2 {
         font-size: 24px;
       }
 
-      & > h4 {
-        margin: 0px;
+      h4 {
         font-size: 12px;
       }
     }
@@ -58,7 +60,6 @@
       color: #ffffff;
 
       h1 {
-        margin: 0px;
         font-size: 48px;
       }
 
@@ -76,6 +77,30 @@
     .map {
       width: 100%;
       background: #2ed3e9;
+    }
+  }
+
+  .root {
+    padding: 60px 74px;
+
+    .card {
+      padding: 24px 40px;
+      box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+
+      h3 {
+        font-size: 14px;
+        line-height: 1.7;
+        color: rgba(0, 0, 0, 0.45);
+      }
+
+      p {
+        font-size: 28px;
+
+        font {
+          margin: 0px 0px 0px 5px;
+          font-size: 14px;
+        }
+      }
     }
   }
 }
