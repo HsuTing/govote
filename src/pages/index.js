@@ -82,6 +82,42 @@ export default class Index extends React.Component {
               </Col>
             ))}
           </Row>
+
+          <Row className={styles.map}>
+            <Col span={18}>TODO map</Col>
+
+            <Col className={styles.statistics} span={6}>
+              居住地統計
+              <ol>
+                {[
+                  {
+                    key: 'America',
+                    title: '美洲',
+                    value: 400,
+                  },
+                  {
+                    key: 'Europe',
+                    title: '歐洲',
+                    value: '400',
+                  },
+                  {
+                    key: 'Island',
+                    title: '本島',
+                    value: 400,
+                  },
+                  {
+                    key: 'Asia',
+                    title: '亞洲',
+                    value: 400,
+                  },
+                ].map(({ key, title, value }) => (
+                  <li key={key}>
+                    {title}：{value} 人
+                  </li>
+                ))}
+              </ol>
+            </Col>
+          </Row>
         </div>
       </>
     );
