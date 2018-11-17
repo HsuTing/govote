@@ -19,7 +19,7 @@ export default class App extends NextApp {
           relayData: await relaySSR?.getCache(),
         };
       }
-    } catch(e) {}
+    } catch (e) {}
 
     return {
       variables,

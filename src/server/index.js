@@ -18,20 +18,13 @@ app.prepare().then(() => {
   const server = new Koa();
   const router = new Router();
 
-  router.all('/graphql', graphql({
-    schema,
-    graphiql: true,
-  }));
-
-  router.all('/login', ctx => {
-    ctx.cookies.set('token', 'login');
-  });
-
-  router.get('*', async ctx => {
-    ctx.req.token = ctx.cookies.get('token');
-    await handle(ctx.req, ctx.res);
-    ctx.respond = false;
-  });
+  router.all(
+    '/graphql',
+    graphql({
+      schema,
+      graphiql: true,
+    }),
+  );
 
   server.use(async (ctx, next) => {
     ctx.res.statusCode = 200;

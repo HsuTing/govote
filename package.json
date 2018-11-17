@@ -1,16 +1,13 @@
 {
   "name": "govote",
-  "version": "1.0.0",
   "description": "govote",
+  "license": "MIT",
+  "author": "HsuTing <hsuting0106@gmail.com>",
+  "version": "1.0.0",
   "scripts": {
     "dev": "node --inspect src/server",
     "relay": "relay-compiler --src ./src --exclude --schema ./schema.graphql --exclude=[**/.next/**]"
   },
-  "keywords": [
-    "govote"
-  ],
-  "author": "HsuTing <hsuting0106@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "babel-plugin-module-resolver": "^3.1.1",
@@ -30,5 +27,22 @@
     "react-relay-network-modern": "^2.4.0",
     "react-relay-network-modern-ssr": "^1.2.1",
     "relay-compiler": "^1.7.0"
+  },
+  "devDependencies": {
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
+    "prettier": "^1.15.2",
+    "prettier-package-json": "^2.0.1"
+  },
+  "keywords": ["govote"],
+  "engines": {
+    "node": ">= 10.2.1",
+    "npm": " >= 6.1.0",
+    "yarn": ">= 1.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

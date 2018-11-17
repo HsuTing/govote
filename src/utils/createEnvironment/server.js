@@ -18,9 +18,6 @@ export default {
         network: new RelayNetworkLayer([
           urlMiddleware({
             url: () => 'http://localhost:8000/graphql',
-            headers: {
-              token: ctx.req.token,
-            },
           }),
           relaySSR.getMiddleware(),
         ]),

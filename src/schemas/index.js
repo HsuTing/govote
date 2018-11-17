@@ -15,7 +15,6 @@ const resolvers = {
   Query: {
     user: (root, args, ctx) => ({
       id: 'user',
-      isLogin: (ctx.headers['token'] || ctx.cookies.get('token')) === 'login',
     }),
   },
 };
