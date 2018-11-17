@@ -1,6 +1,10 @@
 const webpack = require('webpack');
 const withLess = require('@zeit/next-less');
 
+if (typeof require !== 'undefined') {
+  require.extensions['.less'] = () => {};
+}
+
 module.exports = withLess({
   cssModules: true,
   /* eslint-disable no-param-reassign */
@@ -12,6 +16,36 @@ module.exports = withLess({
         loader: 'svg-react-loader',
       },
     });
+
+    if (!isServer) {
+      config.module.rules.find(
+        ({ use }) =>
+          use instanceof Array &&
+          use.find(({ loader }) => loader === 'less-loader'),
+      ).exclude = /node_modules/;
+
+      config.module.rules.push({
+        test: /\.less$/,
+        include: /node_modules\/antd\/lib/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'less-loader',
+            options: {
+              javascriptEnabled: true,
+              modifyVars: {
+                'primary-color': '#fabf3e',
+              },
+            },
+          },
+        ],
+      });
+    }
 
     config.plugins.push(
       new webpack.DefinePlugin({
