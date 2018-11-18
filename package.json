@@ -28,6 +28,7 @@
     "koa-graphql": "^0.8.0",
     "koa-router": "^7.4.0",
     "less": "^3.8.1",
+    "memoize-one": "^4.0.3",
     "moment": "^2.22.2",
     "next": "^7.0.2",
     "output-file-sync": "^2.0.1",

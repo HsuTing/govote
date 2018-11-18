@@ -72,7 +72,6 @@ class Cache {
         path.resolve('cache.json'),
         JSON.stringify(this.store, null, 2),
       );
-      return this.store.items;
     } catch (e) {
       log(e);
     }
