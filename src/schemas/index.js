@@ -1,21 +1,39 @@
 const { makeExecutableSchema } = require('graphql-tools');
 
+const cache = require('./cache');
+
 const typeDefs = `
-  type User {
+  type Area {
+    America: Int!
+    Europe: Int!
+    Island: Int!
+    Asia: Int!
+  }
+
+  type Statistics {
     id: ID!
-    isLogin: Boolean!
+    total: String!
+    time: String!
+    price: String!
+    distance: String!
+    area: Area!
+  }
+
+  type Data {
+    id: ID!
+    statistics: Statistics!
   }
 
   type Query {
-    user: User!
+    data: Data!
   }
 `;
 
 const resolvers = {
   Query: {
-    user: (root, args, ctx) => ({
-      id: 'user',
-    }),
+    data: async () => {
+      await cache.get();
+    },
   },
 };
 
