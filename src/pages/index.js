@@ -1,13 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { fetchQuery, graphql } from 'react-relay';
+import { graphql } from 'react-relay';
 import { Affix, Button, Row, Col } from 'antd';
 
 import MapImg from 'static/MapImg.svg';
 import styles from 'components/styles.less';
 
 export default class Index extends React.Component {
+  static query = graphql`
+    query pages_dataQuery {
+      data {
+        statistics {
+          total
+          time
+          price
+          distance
+        }
+      }
+    }
+  `;
+
   render() {
+    const {
+      data: { statistics },
+    } = this.props;
+
     return (
       <>
         <Affix>
@@ -47,34 +64,32 @@ export default class Index extends React.Component {
               {
                 key: 'total',
                 title: '總投票人數',
-                value: '412,203',
                 unit: '人',
               },
               {
                 key: 'time',
                 title: '總旅途時間',
-                value: '2412.312',
                 unit: '小時',
               },
               {
                 key: 'price',
                 title: '總旅途費用',
-                value: '10,000,000',
                 unit: 'NTD',
               },
               {
                 key: 'distance',
                 title: '總旅途距離',
-                value: '100000.12',
                 unit: 'km',
               },
-            ].map(({ key, title, value, unit }) => (
+            ].map(({ key, title, unit }) => (
               <Col key={key} span={6}>
                 <div className={styles.card}>
                   <h3>{title}</h3>
 
                   <p>
-                    {value}
+                    {['time', 'distance'].includes(key)
+                      ? statistics[key].toFixed(2)
+                      : statistics[key]}
 
                     <font>{unit}</font>
                   </p>
@@ -86,7 +101,7 @@ export default class Index extends React.Component {
           <Row className={styles.map}>
             <Col span={18}>TODO map</Col>
 
-            <Col className={styles.statistics} span={6}>
+            <Col className={styles.area} span={6}>
               居住地統計
               <ol>
                 {[
@@ -98,7 +113,7 @@ export default class Index extends React.Component {
                   {
                     key: 'Europe',
                     title: '歐洲',
-                    value: '400',
+                    value: 400,
                   },
                   {
                     key: 'Island',
