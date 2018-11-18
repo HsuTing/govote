@@ -1,10 +1,8 @@
 module.exports = `
   type Area {
     id: ID!
-    America: Int!
-    Europe: Int!
-    Island: Int!
-    Asia: Int!
+    name: String!
+    value: Int!
   }
 
   type Statistics {
@@ -18,7 +16,7 @@ module.exports = `
   type Data {
     id: ID!
     statistics: Statistics!
-    area: Area!
+    area: [Area]!
   }
 
   type Query {

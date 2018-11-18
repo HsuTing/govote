@@ -16,13 +16,18 @@ export default class Index extends React.Component {
           price
           distance
         }
+        area {
+          id
+          name
+          value
+        }
       }
     }
   `;
 
   render() {
     const {
-      data: { statistics },
+      data: { statistics, area },
     } = this.props;
 
     return (
@@ -104,30 +109,9 @@ export default class Index extends React.Component {
             <Col className={styles.area} span={6}>
               居住地統計
               <ol>
-                {[
-                  {
-                    key: 'America',
-                    title: '美洲',
-                    value: 400,
-                  },
-                  {
-                    key: 'Europe',
-                    title: '歐洲',
-                    value: 400,
-                  },
-                  {
-                    key: 'Island',
-                    title: '本島',
-                    value: 400,
-                  },
-                  {
-                    key: 'Asia',
-                    title: '亞洲',
-                    value: 400,
-                  },
-                ].map(({ key, title, value }) => (
-                  <li key={key}>
-                    {title}：{value} 人
+                {area.map(({ id, name, value }) => (
+                  <li key={id}>
+                    {name}：{value} 人
                   </li>
                 ))}
               </ol>

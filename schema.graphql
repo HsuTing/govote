@@ -1,9 +1,7 @@
 type Area {
   id: ID!
-  America: Int!
-  Europe: Int!
-  Island: Int!
-  Asia: Int!
+  name: String!
+  value: Int!
 }
 
 type Statistics {
@@ -17,7 +15,7 @@ type Statistics {
 type Data {
   id: ID!
   statistics: Statistics!
-  area: Area!
+  area: [Area]!
 }
 
 type Query {
