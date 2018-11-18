@@ -51,7 +51,10 @@ class Cache {
     try {
       if (
         moment()
-          .subtract(1, 'seconds')
+          .subtract(
+            1,
+            process.env.NODE_ENV === 'production' ? 'seconds' : 'days',
+          )
           .valueOf() > moment(this.store.updateTime).valueOf()
       ) {
         log(chalk`{green start ➜} update`);
@@ -71,7 +74,7 @@ class Cache {
       );
       return this.store.items;
     } catch (e) {
-      console.log(e);
+      log(e);
     }
   }
 }
