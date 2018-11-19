@@ -134,7 +134,6 @@ const getUsers = data =>
     })
     .filter(value => value);
 
-// FIXME: memoize
 module.exports = memoizeOne(
   ({ items }) => {
     log(chalk`{green schema ➜} count data`);
@@ -154,7 +153,5 @@ module.exports = memoizeOne(
       users: getUsers(data),
     };
   },
-  (newData, prevData) =>
-    newData.updateTime !== prevData.updateTime ||
-    newData.items[0].token !== prevData.items[0].token,
+  (newData, prevData) => newData.items[0].token === prevData.items[0].token,
 );
