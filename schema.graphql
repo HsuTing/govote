@@ -20,11 +20,18 @@ type User {
   message: String!
 }
 
+type Transportation {
+  id: ID!
+  name: String!
+  value: Float!
+}
+
 type Data {
   id: ID!
   statistics: Statistics!
   area: [Area]!
   users: [User]!
+  transportation: [Transportation]!
 }
 
 type Query {

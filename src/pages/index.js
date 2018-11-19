@@ -36,6 +36,56 @@ export default class Index extends React.Component {
     }
   `;
 
+  componentDidMount() {
+    const {
+      data: {
+        area,
+        statistics: { total },
+      },
+    } = this.props;
+    const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoiaHN1dGluZyIsImEiOiJRajF4Y0hjIn0.9UDt8uw_fxEX791Styd-lA';
+
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v9',
+    });
+
+    map.on('load', () => {
+      area.forEach(({ id, name, value }) => {
+        map.addSource(id, {
+          type: 'geojson',
+          data: {
+            type: 'Point',
+            coordinates: {
+              本島: [120.58, 23.58],
+              大洋洲: [175, -9],
+              亞洲: [87.19, 43.4],
+              北美洲: [-111.725, 48.33],
+              南美洲: [-60, -35],
+              歐洲: [28.4, 53.9],
+              非洲: [16.96, 1.35],
+            }[name],
+          },
+        });
+
+        map.addLayer({
+          id,
+          source: id,
+          type: 'circle',
+          paint: {
+            'circle-radius': value,
+            'circle-color': 'rgba(0, 80, 179, 0.3)',
+            'circle-stroke-width': 1,
+            'circle-stroke-color': '#0050b3',
+          },
+        });
+      });
+    });
+  }
+
   render() {
     const {
       data: { statistics, area, users },
@@ -115,7 +165,7 @@ export default class Index extends React.Component {
           </Row>
 
           <Row className={styles.map}>
-            <Col span={18}>TODO map</Col>
+            <Col id="map" span={18} />
 
             <Col className={styles.area} span={6}>
               居住地統計
