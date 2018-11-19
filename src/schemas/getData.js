@@ -8,7 +8,10 @@ const IDS = {
   timeFieldId: '67f05b89-605b-48ea-a5f0-a7a46c6006f5',
   priceFieldId: '6d0bcbae-937a-435a-9564-d7a78b4792d5',
   distanceFieldId: 'ea69d4ee-f765-4d98-b699-8c20719b5d9e',
-  otherAreaFieldId: 'db43093f-80cb-49f2-bf9d-1e1b0821fdaf',
+  areaFieldId: 'db43093f-80cb-49f2-bf9d-1e1b0821fdaf',
+  targetFieldId: 'b6feb806-2f1d-4e71-a5e6-e8f34134bfea',
+  nameFieldId: 'aacda15a-dab4-4c1c-b3f5-22e57e785954',
+  messageFieldId: '97ace451-18fa-4d06-9823-dfb6340609e7',
 };
 
 const getStatistics = data =>
@@ -50,7 +53,7 @@ const getArea = data =>
       (result, { answers }) => {
         const {
           choice: { label },
-        } = answers.find(({ field: { ref } }) => ref === IDS.otherAreaFieldId);
+        } = answers.find(({ field: { ref } }) => ref === IDS.areaFieldId);
 
         result.find(({ name }) =>
           RegExp(name === '本島' ? '台灣及離島地區' : name).test(label),
@@ -99,6 +102,29 @@ const getArea = data =>
     .filter(({ value }) => value !== 0)
     .sort((a, b) => b.value - a.value);
 
+const getUsers = data =>
+  data
+    .map(({ token, answers }) => {
+      try {
+        return {
+          id: token,
+          area: answers.find(({ field: { ref } }) => ref === IDS.areaFieldId)
+            .choice.label,
+          target: answers.find(
+            ({ field: { ref } }) => ref === IDS.targetFieldId,
+          ).text,
+          name: answers.find(({ field: { ref } }) => ref === IDS.nameFieldId)
+            .text,
+          message: answers.find(
+            ({ field: { ref } }) => ref === IDS.messageFieldId,
+          ).text,
+        };
+      } catch (e) {
+        return null;
+      }
+    })
+    .filter(value => value);
+
 module.exports = memoizeOne(
   ({ items }) => {
     log(chalk`{green schema ➜} count data`);
@@ -115,6 +141,7 @@ module.exports = memoizeOne(
       id: 'f5cbfdb7-d04a-4064-a4a4-76d621dac70e',
       statistics: getStatistics(data),
       area: getArea(data),
+      users: getUsers(data),
     };
   },
   (newData, prevData) =>

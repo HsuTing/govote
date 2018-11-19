@@ -1,10 +1,4 @@
 module.exports = `
-  type Area {
-    id: ID!
-    name: String!
-    value: Int!
-  }
-
   type Statistics {
     id: ID!
     total: String!
@@ -13,10 +7,25 @@ module.exports = `
     distance: Float!
   }
 
+  type Area {
+    id: ID!
+    name: String!
+    value: Int!
+  }
+
+  type User {
+    id: ID!
+    area: String!
+    target: String!
+    name: String!
+    message: String!
+  }
+
   type Data {
     id: ID!
     statistics: Statistics!
     area: [Area]!
+    users: [User]!
   }
 
   type Query {
