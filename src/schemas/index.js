@@ -1,11 +1,17 @@
+const fs = require('fs');
+const path = require('path');
+
 const { makeExecutableSchema } = require('graphql-tools');
 
-const typeDefs = require('./typeDefs');
 const getData = require('./getData');
 
 const cache = require('../utils/cache');
 
 const { log } = console;
+const typeDefs = fs.readFileSync(
+  path.resolve(__dirname, '../../schema.graphql'),
+  'utf-8',
+);
 
 const resolvers = {
   Query: {
