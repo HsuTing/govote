@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'react-relay';
-import { Affix, Button, Row, Col } from 'antd';
+import { Affix, Button, Row, Col, Carousel } from 'antd';
 
 import MapImg from 'static/MapImg.svg';
+import UsersIcon from 'static/UsersIcon.svg';
+import ArrowIcon from 'static/ArrowIcon.svg';
 import styles from 'components/styles.less';
 
 export default class Index extends React.Component {
+  carouselRef = React.createRef();
+
   static query = graphql`
     query pages_dataQuery {
       data {
@@ -21,13 +25,20 @@ export default class Index extends React.Component {
           name
           value
         }
+        users {
+          id
+          name
+          fromCity
+          toCity
+          message
+        }
       }
     }
   `;
 
   render() {
     const {
-      data: { statistics, area },
+      data: { statistics, area, users },
     } = this.props;
 
     return (
@@ -117,6 +128,60 @@ export default class Index extends React.Component {
               </ol>
             </Col>
           </Row>
+
+          <div className={styles.usersHeader}>
+            <UsersIcon />
+
+            <div className={styles.text}>要回家投票的人說</div>
+          </div>
+        </div>
+
+        <Carousel
+          ref={this.carouselRef}
+          className={styles.carousel}
+          slidesToShow={3}
+          dots={false}
+          draggable
+          centerMode
+          infinite
+        >
+          {users.map(({ id, fromCity, toCity, name, message }) => (
+            <div key={id} className={styles.cardWrapper}>
+              <div className={styles.card}>
+                <h1>
+                  {fromCity}
+                  <ArrowIcon className={styles.icon} />
+                  {toCity}
+                </h1>
+
+                <h3>{name}</h3>
+
+                <div>
+                  <p>“</p>
+
+                  <p>{message}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Carousel>
+
+        <div className={styles.carouselButtons}>
+          <Button
+            shape="circle"
+            icon="left"
+            onClick={() => {
+              this.carouselRef.current.slick.slickPrev();
+            }}
+          />
+
+          <Button
+            shape="circle"
+            icon="right"
+            onClick={() => {
+              this.carouselRef.current.slick.slickNext();
+            }}
+          />
         </div>
       </>
     );

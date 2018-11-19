@@ -8,8 +8,13 @@ const IDS = {
   timeFieldId: '67f05b89-605b-48ea-a5f0-a7a46c6006f5',
   priceFieldId: '6d0bcbae-937a-435a-9564-d7a78b4792d5',
   distanceFieldId: 'ea69d4ee-f765-4d98-b699-8c20719b5d9e',
+
   areaFieldId: 'db43093f-80cb-49f2-bf9d-1e1b0821fdaf',
   targetFieldId: 'b6feb806-2f1d-4e71-a5e6-e8f34134bfea',
+
+  fromCityFieldId: 'fab3af2b-970c-4d48-af55-7dbad56067f2',
+  fromOtherCityFieldId: '8de505e3-d39d-477f-b17e-f483e45f1abc',
+  toCityFieldId: 'b6feb806-2f1d-4e71-a5e6-e8f34134bfea',
   nameFieldId: 'aacda15a-dab4-4c1c-b3f5-22e57e785954',
   messageFieldId: '97ace451-18fa-4d06-9823-dfb6340609e7',
 };
@@ -108,10 +113,14 @@ const getUsers = data =>
       try {
         return {
           id: token,
-          area: answers.find(({ field: { ref } }) => ref === IDS.areaFieldId)
-            .choice.label,
-          target: answers.find(
-            ({ field: { ref } }) => ref === IDS.targetFieldId,
+          fromCity: (
+            answers.find(({ field: { ref } }) => ref === IDS.fromCityFieldId) ||
+            answers.find(
+              ({ field: { ref } }) => ref === IDS.fromOtherCityFieldId,
+            )
+          ).text,
+          toCity: answers.find(
+            ({ field: { ref } }) => ref === IDS.toCityFieldId,
           ).text,
           name: answers.find(({ field: { ref } }) => ref === IDS.nameFieldId)
             .text,
@@ -125,6 +134,7 @@ const getUsers = data =>
     })
     .filter(value => value);
 
+// FIXME: memoize
 module.exports = memoizeOne(
   ({ items }) => {
     log(chalk`{green schema ➜} count data`);

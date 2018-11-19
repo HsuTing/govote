@@ -14,8 +14,8 @@ type Area {
 
 type User {
   id: ID!
-  area: String!
-  target: String!
+  fromCity: String!
+  toCity: String!
   name: String!
   message: String!
 }

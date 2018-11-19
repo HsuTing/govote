@@ -1,6 +1,11 @@
+.card {
+  padding: 24px 40px;
+  box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+}
+
 :global(#__next) {
   // overwrite antd
-  :global(.ant-btn) {
+  :global(.ant-btn:not(.ant-btn-icon-only)) {
     height: unset;
   }
 
@@ -76,12 +81,9 @@
   }
 
   .root {
-    padding: 60px 74px;
+    padding: 60px 74px 0px;
 
     .card {
-      padding: 24px 40px;
-      box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
-
       h3 {
         font-size: 14px;
         line-height: 1.7;
@@ -108,6 +110,76 @@
           margin: 35px 0px 0px;
           padding: 0px 0px 0px 20px;
         }
+      }
+    }
+
+    .usersHeader {
+      position: relative;
+      font-size: 36px;
+      font-weight: bold;
+
+      .text {
+        position: absolute;
+        top: 23px;
+      }
+    }
+  }
+
+  .carousel {
+    font-size: 18px;
+
+    .cardWrapper {
+      padding: 15px;
+
+      .card {
+        padding: 24px 40px;
+
+        & > * {
+          font-size: inherit;
+        }
+
+        h1 {
+          color: #fabf3e;
+        }
+
+        .icon {
+          margin: 0px 5px;
+        }
+
+        h3 {
+          margin: 5px 0px;
+          color: #2ed3e9;
+        }
+
+        & > div {
+          display: flex;
+
+          & > p:first-child {
+            margin: 0px 5px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .carouselButtons {
+    padding: 10px 74px 60px;
+
+    :global(.ant-btn) {
+      width: 64px;
+      height: 64px;
+      font-size: 25px;
+      color: #2ed3e9;
+      border: 0px;
+      box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+
+      &:hover {
+        color: #ffffff;
+        background: #2ed3e9;
+      }
+
+      &:first-child {
+        margin: 0px 10px 0px 0px;
       }
     }
   }
