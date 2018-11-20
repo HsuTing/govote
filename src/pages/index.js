@@ -30,6 +30,11 @@ export default class Index extends React.Component {
           name
           value
         }
+        transportation {
+          id
+          name
+          value
+        }
         users {
           id
           name
@@ -95,7 +100,7 @@ export default class Index extends React.Component {
 
   render() {
     const {
-      data: { statistics, area, users },
+      data: { statistics, area, transportation, users },
     } = this.props;
 
     return (
@@ -152,7 +157,7 @@ export default class Index extends React.Component {
                 unit: 'km',
               },
             ].map(({ key, title, unit }) => (
-              <Col key={key} span={6}>
+              <Col key={key} lg={6} md={12} sm={24}>
                 <div className={styles.card}>
                   <h3>{title}</h3>
 
@@ -168,10 +173,12 @@ export default class Index extends React.Component {
             ))}
           </Row>
 
-          <Row className={styles.map}>
-            <Col id="map" span={18} />
+          <Row className={styles.map} gutter={16}>
+            <Col lg={18} xs={24}>
+              <div id="map" />
+            </Col>
 
-            <Col className={styles.area} span={6}>
+            <Col className={styles.area} lg={6} xs={24}>
               居住地統計
               <ol>
                 {area.map(({ id, name, value }) => (
@@ -181,6 +188,8 @@ export default class Index extends React.Component {
                 ))}
               </ol>
             </Col>
+
+            <Col span={24}>交通方式統計</Col>
           </Row>
 
           <div className={styles.usersHeader}>
@@ -248,13 +257,13 @@ export default class Index extends React.Component {
         </div>
 
         <Row className={styles.vote} type="flex">
-          <Col span={12}>
+          <Col lg={12} xs={24} className={styles.voteSvg}>
             <Vote />
 
             <VoteMessage className={styles.message} />
           </Col>
 
-          <Col span={12}>
+          <Col lg={12} xs={24}>
             <div className={styles.info}>
               <div>
                 <h3>聯絡我們</h3>
