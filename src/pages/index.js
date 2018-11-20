@@ -161,7 +161,7 @@ export default class Index extends React.Component {
         <div className={styles.headerImg}>
           <div className={styles.info}>
             <h1>
-              投票的地方可能很遠,
+              投票的地方可能很遠，
               <br />
               但投票能讓美好的未來更近一些。
             </h1>
