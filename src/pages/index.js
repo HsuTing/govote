@@ -273,6 +273,10 @@ export default class Index extends React.Component {
               </div>
             </div>
           </Col>
+
+          <Col span={24} className={styles.copyRight}>
+            ©2018 GovoteTW. All rights reserved.
+          </Col>
         </Row>
       </>
     );
