@@ -6,10 +6,17 @@ type Statistics {
   distance: Float!
 }
 
+type SubArea {
+  id: ID!
+  name: String!
+  value: Int!
+}
+
 type Area {
   id: ID!
   name: String!
   value: Int!
+  list: [SubArea]!
 }
 
 type User {

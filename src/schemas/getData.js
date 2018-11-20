@@ -69,6 +69,23 @@ const getArea = data =>
 
         area.value += 1;
 
+        // add item
+        const { text: fromCity } =
+          answers.find(({ field: { ref } }) => ref === IDS.fromCityFieldId) ||
+          answers.find(
+            ({ field: { ref } }) => ref === IDS.fromOtherCityFieldId,
+          );
+
+        const item = area.list.find(({ name }) => name === fromCity) || {
+          id: uuid(),
+          name: fromCity,
+          value: 0,
+        };
+
+        if (item.value === 0) area.list.push(item);
+
+        item.value += 1;
+
         return result;
       },
       [
