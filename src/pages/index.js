@@ -6,6 +6,8 @@ import { Affix, Button, Row, Col, Carousel } from 'antd';
 import MapImg from 'static/MapImg.svg';
 import UsersIcon from 'static/UsersIcon.svg';
 import ArrowIcon from 'static/ArrowIcon.svg';
+import Vote from 'static/Vote.svg';
+import VoteMessage from 'static/VoteMessage.svg';
 import styles from 'components/styles.less';
 
 export default class Index extends React.Component {
@@ -241,6 +243,16 @@ export default class Index extends React.Component {
             立即分享！
           </Button>
         </div>
+
+        <Row className={styles.vote}>
+          <Col span={12}>
+            <Vote />
+
+            <VoteMessage className={styles.message} />
+          </Col>
+
+          <Col span={12} />
+        </Row>
       </>
     );
   }
