@@ -18,6 +18,12 @@ export default class Document extends NextDocument {
               __html: `
               @font-face {
                 font-family: 'Noto Sans CJK tc';
+                font-weight: 900;
+                src: url("/static/font/NotoSansCJKtc-Black.otf") format("opentype");
+              }
+
+              @font-face {
+                font-family: 'Noto Sans CJK tc';
                 font-weight: 700;
                 src: url("/static/font/NotoSansCJKtc-Bold.otf") format("opentype");
               }
