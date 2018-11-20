@@ -63,10 +63,11 @@ const getArea = data =>
         const {
           choice: { label },
         } = answers.find(({ field: { ref } }) => ref === IDS.areaFieldId);
-
-        result.find(({ name }) =>
+        const area = result.find(({ name }) =>
           RegExp(name === '本島' ? '台灣及離島地區' : name).test(label),
-        ).value += 1;
+        );
+
+        area.value += 1;
 
         return result;
       },
@@ -75,11 +76,13 @@ const getArea = data =>
           id: uuid(),
           name: '本島',
           value: 0,
+          list: [],
         },
         {
           id: uuid(),
           name: '大洋洲',
           value: 0,
+          list: [],
         },
         {
           id: uuid(),
@@ -90,21 +93,25 @@ const getArea = data =>
           id: uuid(),
           name: '北美洲',
           value: 0,
+          list: [],
         },
         {
           id: uuid(),
           name: '南美洲',
           value: 0,
+          list: [],
         },
         {
           id: uuid(),
           name: '歐洲',
           value: 0,
+          list: [],
         },
         {
           id: uuid(),
           name: '非洲',
           value: 0,
+          list: [],
         },
       ],
     )
@@ -138,32 +145,33 @@ const getUsers = data =>
     })
     .filter(value => value);
 
-const getTransportation = data =>
-  Object.values(
-    data.reduce((result, { answers }) => {
-      const {
-        choices: { labels },
-      } = answers.find(
-        ({ field: { ref } }) => ref === IDS.transportationFieldId,
-      );
+const getTransportation = data => {
+  const total = data.reduce((result, { answers }) => {
+    const {
+      choices: { labels },
+    } = answers.find(({ field: { ref } }) => ref === IDS.transportationFieldId);
 
-      labels.forEach(value => {
-        if (!result[value])
-          result[value] = {
-            id: uuid(),
-            name: value,
-            count: 0,
-          };
+    labels.forEach(value => {
+      const transportation = result.find(({ name }) => name === value) || {
+        id: uuid(),
+        name: value,
+        count: 0,
+      };
 
-        result[value].count += 1;
-      });
+      if (transportation.count === 0) result.push(transportation);
 
-      return result;
-    }, {}),
-  ).map(({ count, ...result }) => ({
+      transportation.count += 1;
+    });
+
+    return result;
+  }, []);
+  const max = total.reduce((result, { count }) => result + count, 0);
+
+  return total.map(({ count, ...result }) => ({
     ...result,
-    value: (count / data.length) * 100,
+    value: (count / max) * 100,
   }));
+};
 
 module.exports = memoizeOne(
   ({ items }) => {
