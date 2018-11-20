@@ -12,6 +12,7 @@ import FBIcon from 'static/FBIcon.svg';
 import TwitterIcon from 'static/TwitterIcon.svg';
 import LinkinIcon from 'static/LinkinIcon.svg';
 import styles from 'components/styles.less';
+import { TRANSPORTATION_ARRAY } from 'utils/constants';
 
 export default class Index extends React.Component {
   carouselRef = React.createRef();
@@ -192,10 +193,12 @@ export default class Index extends React.Component {
             <Col className={styles.transportation} span={24}>
               交通方式統計
               <div className={styles.bar}>
-                {transportation.map(({ id, value }, index) => (
+                {transportation.map(({ id, name, value }, index) => (
                   <div
                     key={id}
-                    className={styles[`color-${index}`]}
+                    className={
+                      styles[`color-${TRANSPORTATION_ARRAY.indexOf(name)}`]
+                    }
                     style={{
                       width: `${value}%`,
                     }}
@@ -207,8 +210,8 @@ export default class Index extends React.Component {
             </Col>
 
             <Col className={styles.symbol} span={24} type="flow">
-              {transportation.map(({ id, name }, index) => (
-                <div key={id}>
+              {TRANSPORTATION_ARRAY.map((name, index) => (
+                <div key={name}>
                   <span className={styles[`color-${index}`]} />
 
                   {name}

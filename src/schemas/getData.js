@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const uuid = require('uuid/v4');
 
 const cache = require('../utils/cache');
+const { TRANSPORTATION_ARRAY } = require('../utils/constants');
 
 const { log } = console;
 const IDS = {
@@ -184,10 +185,16 @@ const getTransportation = data => {
   }, []);
   const max = total.reduce((result, { count }) => result + count, 0);
 
-  return total.map(({ count, ...result }) => ({
-    ...result,
-    value: (count / max) * 100,
-  }));
+  return total
+    .map(({ count, ...result }) => ({
+      ...result,
+      value: (count / max) * 100,
+    }))
+    .sort(
+      (a, b) =>
+        TRANSPORTATION_ARRAY.indexOf(a.name) -
+        TRANSPORTATION_ARRAY.indexOf(b.name),
+    );
 };
 
 module.exports = memoizeOne(
