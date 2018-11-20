@@ -8,6 +8,9 @@ import UsersIcon from 'static/UsersIcon.svg';
 import ArrowIcon from 'static/ArrowIcon.svg';
 import Vote from 'static/Vote.svg';
 import VoteMessage from 'static/VoteMessage.svg';
+import FBIcon from 'static/FBIcon.svg';
+import TwitterIcon from 'static/TwitterIcon.svg';
+import LinkinIcon from 'static/LinkinIcon.svg';
 import styles from 'components/styles.less';
 
 export default class Index extends React.Component {
@@ -244,14 +247,32 @@ export default class Index extends React.Component {
           </Button>
         </div>
 
-        <Row className={styles.vote}>
+        <Row className={styles.vote} type="flex">
           <Col span={12}>
             <Vote />
 
             <VoteMessage className={styles.message} />
           </Col>
 
-          <Col span={12} />
+          <Col span={12}>
+            <div className={styles.info}>
+              <div>
+                <h3>聯絡我們</h3>
+
+                <div className={styles.email}>GovoteTW@gmail.com</div>
+
+                <h3>分享出去</h3>
+
+                <div>
+                  <FBIcon />
+
+                  <TwitterIcon />
+
+                  <LinkinIcon />
+                </div>
+              </div>
+            </div>
+          </Col>
         </Row>
       </>
     );
