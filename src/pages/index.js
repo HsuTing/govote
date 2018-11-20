@@ -152,9 +152,11 @@ export default class Index extends React.Component {
           <header className={styles.header}>
             <div className={styles.info}>我們支持婚姻平權&性平教育</div>
 
-            <Button className={styles.button} type="primary">
-              我會回家投票
-            </Button>
+            <a href="https://harrison98.typeform.com/to/pJAGob" target="_blank">
+              <Button className={styles.button} type="primary">
+                我會回家投票
+              </Button>
+            </a>
           </header>
         </Affix>
 
@@ -168,9 +170,11 @@ export default class Index extends React.Component {
 
             <h4>告訴大家你會怎麼回家投票, 可以鼓勵更多人一起回家投票噢!</h4>
 
-            <Button className={styles.button} type="primary">
-              我會回家投票
-            </Button>
+            <a href="https://harrison98.typeform.com/to/pJAGob" target="_blank">
+              <Button className={styles.button} type="primary">
+                我會回家投票
+              </Button>
+            </a>
           </div>
 
           <MapImg className={styles.map} />
@@ -321,9 +325,14 @@ export default class Index extends React.Component {
         <div className={styles.share}>
           <h2>歡迎將網站分享出去，鼓勵更多人一起「#1124為愛返家」吧！</h2>
 
-          <Button className={styles.button} type="primary">
-            立即分享！
-          </Button>
+          <a
+            href="http://www.facebook.com/share.php?u=https://govote-tw.herokuapp.com"
+            target="_blank"
+          >
+            <Button className={styles.button} type="primary">
+              立即分享！
+            </Button>
+          </a>
         </div>
 
         <Row className={styles.vote} type="flex">
@@ -343,11 +352,29 @@ export default class Index extends React.Component {
                 <h3>分享出去</h3>
 
                 <div>
-                  <FBIcon />
-
-                  <TwitterIcon />
-
-                  <LinkinIcon />
+                  {[
+                    {
+                      url: 'http://www.facebook.com/share.php?u=',
+                      Icon: FBIcon,
+                    },
+                    {
+                      url: 'https://twitter.com/intent/tweet?text=',
+                      Icon: TwitterIcon,
+                    },
+                    {
+                      url:
+                        'https://www.linkedin.com/sharing/share-offsite/?url=',
+                      Icon: LinkinIcon,
+                    },
+                  ].map(({ url, Icon }) => (
+                    <a
+                      key={url}
+                      href={`${url}https://govote-tw.herokuapp.com`}
+                      target="_blank"
+                    >
+                      <Icon />
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
