@@ -51,6 +51,7 @@ export default class Index extends React.Component {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v9',
+      maxBounds: [[-180, -85], [180, 85]],
     });
 
     map.on('load', () => {
