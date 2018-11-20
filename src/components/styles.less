@@ -1,3 +1,6 @@
+@PADDING_TOP: 60px;
+@PADDING_LEFT: 74px;
+
 :global(#__next) {
   // overwrite antd
   :global(.ant-btn:not(.ant-btn-icon-only)) {
@@ -80,7 +83,7 @@
   }
 
   .root {
-    padding: 60px 74px 0px;
+    padding: @PADDING_TOP @PADDING_LEFT 0px;
 
     .card {
       h3 {
@@ -100,7 +103,7 @@
     }
 
     .map {
-      margin: 60px 0px;
+      margin: @PADDING_TOP 0px;
 
       :global(#map) {
         height: 450px;
@@ -112,6 +115,80 @@
         ol {
           margin: 35px 0px 0px;
           padding: 0px 0px 0px 20px;
+        }
+      }
+    }
+
+    .color-0 {
+      background: #ff6666;
+    }
+
+    .color-1 {
+      background: #f99246;
+    }
+
+    .color-2 {
+      background: #f9d22f;
+    }
+
+    .color-3 {
+      background: #a4d629;
+    }
+
+    .color-4 {
+      background: #42b037;
+    }
+
+    .color-5 {
+      background: #1fcc96;
+    }
+
+    .color-6 {
+      background: #2ed3e9;
+    }
+
+    .color-7 {
+      background: #2e90e8;
+    }
+
+    .color-8 {
+      background: #ab72dd;
+    }
+
+    .color-9 {
+      background: #ff5faf;
+    }
+
+    .transportation {
+      margin: 50px 0px 10px;
+      display: flex;
+      font-size: 12px;
+
+      .bar {
+        display: flex;
+        flex-grow: 1;
+        margin: 0px 0px 0px 8px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    .symbol {
+      width: 100%;
+      text-align: right;
+
+      span {
+        display: inline-block;
+        margin: 0px 5px 0px 0px;
+        width: 11px;
+        height: 11px;
+      }
+
+      & > div {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin: 0px 10px 0px 0px;
         }
       }
     }
@@ -166,7 +243,7 @@
   }
 
   .carouselButtons {
-    padding: 10px 74px 60px;
+    padding: 10px @PADDING_LEFT @PADDING_TOP;
 
     :global(.ant-btn) {
       width: 64px;
@@ -209,7 +286,7 @@
   }
 
   .vote {
-    margin: 60px 74px;
+    margin: @PADDING_TOP @PADDING_LEFT;
 
     .voteSvg {
       svg {
@@ -236,7 +313,7 @@
       }
 
       svg:not(:last-child) {
-        margin: 0px 30px 0px 0px;
+        margin: 0px 15px 0px 0px;
       }
 
       .email {

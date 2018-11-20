@@ -173,7 +173,7 @@ export default class Index extends React.Component {
             ))}
           </Row>
 
-          <Row className={styles.map} gutter={16}>
+          <Row className={styles.map} gutter={16} type="flex">
             <Col lg={18} xs={24}>
               <div id="map" />
             </Col>
@@ -189,7 +189,32 @@ export default class Index extends React.Component {
               </ol>
             </Col>
 
-            <Col span={24}>交通方式統計</Col>
+            <Col className={styles.transportation} span={24}>
+              交通方式統計
+              <div className={styles.bar}>
+                {transportation.map(({ id, value }, index) => (
+                  <div
+                    key={id}
+                    className={styles[`color-${index}`]}
+                    style={{
+                      width: `${value}%`,
+                    }}
+                  >
+                    {value.toFixed(2)} %
+                  </div>
+                ))}
+              </div>
+            </Col>
+
+            <Col className={styles.symbol} span={24} type="flow">
+              {transportation.map(({ id, name }, index) => (
+                <div key={id}>
+                  <span className={styles[`color-${index}`]} />
+
+                  {name}
+                </div>
+              ))}
+            </Col>
           </Row>
 
           <div className={styles.usersHeader}>
