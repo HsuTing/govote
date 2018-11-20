@@ -7,6 +7,24 @@
     height: unset;
   }
 
+  :global(.mapboxgl-popup-tip) {
+    display: none;
+  }
+
+  :global(.map-pop) {
+    :global(.mapboxgl-popup-content) {
+      padding: 8px 12px;
+      color: white;
+      background: rgba(0, 0, 0, 0.75);
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    ol {
+      padding: 0px 0px 0px 14px;
+    }
+  }
+
+  // share class
   * {
     margin: 0px;
     color: inherit;

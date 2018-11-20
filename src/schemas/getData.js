@@ -134,6 +134,10 @@ const getArea = data =>
       ],
     )
     .filter(({ value }) => value !== 0)
+    .map(({ list, ...result }) => ({
+      ...result,
+      list: list.sort((a, b) => b.value - a.value),
+    }))
     .sort((a, b) => b.value - a.value);
 
 const getUsers = data =>
