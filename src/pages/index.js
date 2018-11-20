@@ -53,6 +53,7 @@ export default class Index extends React.Component {
       style: 'mapbox://styles/mapbox/light-v9',
       maxBounds: [[-180, -85], [180, 85]],
     });
+    const MAX_RADIUS = 30;
 
     map.on('load', () => {
       area.forEach(({ id, name, value }) => {
@@ -77,7 +78,7 @@ export default class Index extends React.Component {
           source: id,
           type: 'circle',
           paint: {
-            'circle-radius': value,
+            'circle-radius': MAX_RADIUS * (value / total),
             'circle-color': 'rgba(0, 80, 179, 0.3)',
             'circle-stroke-width': 1,
             'circle-stroke-color': '#0050b3',
@@ -191,9 +192,10 @@ export default class Index extends React.Component {
           ref={this.carouselRef}
           className={styles.carousel}
           slidesToShow={3}
+          slidesToScroll={3}
+          rows={2}
           dots={false}
           draggable
-          centerMode
           infinite
         >
           {users.map(({ id, fromCity, toCity, name, message }) => (
