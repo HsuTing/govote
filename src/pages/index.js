@@ -233,6 +233,14 @@ export default class Index extends React.Component {
             }}
           />
         </div>
+
+        <div className={styles.share}>
+          <h2>歡迎將網站分享出去，鼓勵更多人一起「#1124為愛返家」吧！</h2>
+
+          <Button className={styles.button} type="primary">
+            立即分享！
+          </Button>
+        </div>
       </>
     );
   }
