@@ -41,6 +41,8 @@ module.exports = withLess({
               modifyVars: {
                 'primary-color': '#fabf3e',
                 'border-radius-base': '0px',
+                'font-family': 'Noto Sans CJK tc',
+                'font-family-no-number': 'Noto Sans CJK tc',
               },
             },
           },
