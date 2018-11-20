@@ -32,7 +32,8 @@ const getStatistics = data =>
           answers
             .find(({ field: { ref } }) => ref === IDS.timeFieldId)
             .text.match(/\d*(\.\d*)?/)[0] || '0',
-        ),
+        ) /
+          60,
       price:
         price +
         parseInt(
