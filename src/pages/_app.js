@@ -1,6 +1,7 @@
 import React from 'react';
 import { QueryRenderer, fetchQuery } from 'react-relay';
 import NextApp, { Container } from 'next/app';
+import Head from 'next/head';
 
 import { initEnvironment, createEnvironment } from 'utils/createEnvironment';
 
@@ -38,6 +39,10 @@ export default class App extends NextApp {
 
     return (
       <Container>
+        <Head>
+          <title>為愛返鄉，我們願意走這麼遠！</title>
+        </Head>
+
         <QueryRenderer
           environment={environment}
           query={Component.query}
