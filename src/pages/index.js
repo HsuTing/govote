@@ -6,6 +6,7 @@ import { Button, Row, Col, Carousel } from 'antd';
 import Header from 'components/Header';
 import Statistics from 'components/Statistics';
 import Map from 'components/Map';
+import Transportation from 'components/Transportation';
 import Share from 'components/Share';
 import UsersIcon from 'static/UsersIcon.svg';
 import ArrowIcon from 'static/ArrowIcon.svg';
@@ -26,9 +27,7 @@ export default class Index extends React.Component {
           ...Map_area
         }
         transportation {
-          id
-          name
-          value
+          ...Transportation_transportation
         }
         users {
           id
@@ -55,36 +54,7 @@ export default class Index extends React.Component {
 
           <Map statistics={statistics} area={area} />
 
-          <Row className={styles.map} gutter={16} type="flex">
-            <Col className={styles.transportation} span={24}>
-              交通方式統計
-              <div className={styles.bar}>
-                {transportation.map(({ id, name, value }, index) => (
-                  <div
-                    key={id}
-                    className={
-                      styles[`color-${TRANSPORTATION_ARRAY.indexOf(name)}`]
-                    }
-                    style={{
-                      width: `${value}%`,
-                    }}
-                  >
-                    {value.toFixed(2)} %
-                  </div>
-                ))}
-              </div>
-            </Col>
-
-            <Col className={styles.symbol} span={24} type="flow">
-              {TRANSPORTATION_ARRAY.map((name, index) => (
-                <div key={name}>
-                  <span className={styles[`color-${index}`]} />
-
-                  {name}
-                </div>
-              ))}
-            </Col>
-          </Row>
+          <Transportation transportation={transportation} />
 
           <div className={styles.usersHeader}>
             <UsersIcon />

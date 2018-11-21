@@ -1,0 +1,77 @@
+@import './constants.less';
+
+:global(#__next) .root {
+  .color-0 {
+    background: #ff6666;
+  }
+
+  .color-1 {
+    background: #f99246;
+  }
+
+  .color-2 {
+    background: #f9d22f;
+  }
+
+  .color-3 {
+    background: #a4d629;
+  }
+
+  .color-4 {
+    background: #42b037;
+  }
+
+  .color-5 {
+    background: #1fcc96;
+  }
+
+  .color-6 {
+    background: #2ed3e9;
+  }
+
+  .color-7 {
+    background: #2e90e8;
+  }
+
+  .color-8 {
+    background: #ab72dd;
+  }
+
+  .color-9 {
+    background: #ff5faf;
+  }
+
+  .transportation {
+    margin: 50px 0px 10px;
+    display: flex;
+    font-size: 12px;
+
+    .bar {
+      display: flex;
+      flex-grow: 1;
+      margin: 0px 0px 0px 8px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .symbol {
+    width: 100%;
+    text-align: right;
+
+    span {
+      display: inline-block;
+      margin: 0px 5px 0px 0px;
+      width: 11px;
+      height: 11px;
+    }
+
+    & > div {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin: 0px 10px 0px 0px;
+      }
+    }
+  }
+}
