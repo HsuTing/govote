@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "node --inspect ./src/server",
-    "heroku-postbuild": "yarn relay && yarn prod",
+    "heroku-postbuild": "patch-package && yarn relay && yarn prod",
     "postinstall": "patch-package",
     "prod": "next build ./src",
     "relay": "relay-compiler --src ./src --exclude --schema ./schema.graphql --exclude=[**/.next/**]",
