@@ -35,8 +35,6 @@ export default class Document extends NextDocument {
           <meta name="theme-color" content="#ffffff" />
 
           <meta property="og:image" content="/static/og-image.png" />
-          <meta property="og:image:height" content="600" />
-          <meta property="og:image:width" content="600" />
           <meta property="og:title" content="為愛返鄉，我們願意走這麼遠！" />
           <meta
             property="og:description"
