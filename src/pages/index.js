@@ -320,11 +320,12 @@ export default class Index extends React.Component {
 
         <Share />
 
-        <Row className={styles.vote} type="flex">
-          <Col span={24} className={styles.copyRight}>
-            ©2018 GovoteTW. All rights reserved.
-          </Col>
-        </Row>
+        <div className={styles.copyright}>
+          <a href="mailto:lfiwereyou1069@gmail.com">
+            聯絡信箱: lfiwereyou1069@gmail.com
+          </a>
+          ©2018 GovoteTW All rights reserved.
+        </div>
       </>
     );
   }

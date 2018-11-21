@@ -7,7 +7,7 @@ import TwitterIcon from 'static/TwitterIcon.svg';
 
 import styles from './styles/share.less';
 
-export default class Index extends React.Component {
+export default class Share extends React.Component {
   shouldComponentUpdate() {
     return false;
   }
