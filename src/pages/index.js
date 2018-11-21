@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import { graphql } from 'react-relay';
 import { Affix, Button, Row, Col, Carousel } from 'antd';
 
-import MapImg from 'static/MapImg.svg';
+import Header from 'components/Header';
+import Share from 'components/Share';
 import UsersIcon from 'static/UsersIcon.svg';
 import ArrowIcon from 'static/ArrowIcon.svg';
-import Share from 'components/Share';
 import styles from 'components/styles/index.less';
 import { TRANSPORTATION_ARRAY } from 'utils/constants';
 
@@ -144,37 +144,7 @@ export default class Index extends React.Component {
 
     return (
       <>
-        <Affix>
-          <header className={styles.header}>
-            <div className={styles.info}>我們支持婚姻平權&性平教育</div>
-
-            <a href="https://harrison98.typeform.com/to/pJAGob" target="_blank">
-              <Button className={styles.button} type="primary">
-                我會回家投票
-              </Button>
-            </a>
-          </header>
-        </Affix>
-
-        <div className={styles.headerImg}>
-          <div className={styles.info}>
-            <h1>
-              投票的地方可能很遠，
-              <br />
-              但投票能讓美好的未來更近一些。
-            </h1>
-
-            <h4>告訴大家你會怎麼回家投票, 可以鼓勵更多人一起回家投票噢!</h4>
-
-            <a href="https://harrison98.typeform.com/to/pJAGob" target="_blank">
-              <Button className={styles.button} type="primary">
-                我會回家投票
-              </Button>
-            </a>
-          </div>
-
-          <MapImg className={styles.map} />
-        </div>
+        <Header />
 
         <div className={styles.root}>
           <Row gutter={16}>
