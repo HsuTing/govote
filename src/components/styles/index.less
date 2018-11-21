@@ -36,86 +36,14 @@
     }
   }
 
-  .card {
+  :global(.card) {
     padding: 24px 40px;
     box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
   }
 
   // pages
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 50px;
-    color: #ffffff;
-    background: #2ed3e9;
-
-    .info {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .button {
-      padding: 12px 32px;
-    }
-  }
-
-  .headerImg {
-    position: relative;
-
-    .info {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      color: #ffffff;
-
-      h1 {
-        text-align: center;
-        font-size: 48px;
-        font-weight: 900;
-      }
-
-      h4 {
-        margin: 34px 0px 70px;
-        font-size: 16px;
-      }
-
-      .button {
-        padding: 20px 50px;
-        font-size: 20px;
-      }
-    }
-
-    .map {
-      width: 100%;
-      background: #2ed3e9;
-    }
-  }
-
   .root {
     padding: @PADDING_TOP @PADDING_LEFT 0px;
-
-    .card {
-      h3 {
-        font-size: 14px;
-        line-height: 1.7;
-        color: rgba(0, 0, 0, 0.45);
-      }
-
-      p {
-        font-size: 28px;
-
-        font {
-          margin: 0px 0px 0px 5px;
-          font-size: 14px;
-        }
-      }
-    }
 
     .map {
       margin: @PADDING_TOP 0px;

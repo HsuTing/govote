@@ -2,9 +2,10 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import PropTypes from 'prop-types';
 import { graphql } from 'react-relay';
-import { Affix, Button, Row, Col, Carousel } from 'antd';
+import { Button, Row, Col, Carousel } from 'antd';
 
 import Header from 'components/Header';
+import Statistics from 'components/Statistics';
 import Share from 'components/Share';
 import UsersIcon from 'static/UsersIcon.svg';
 import ArrowIcon from 'static/ArrowIcon.svg';
@@ -18,10 +19,8 @@ export default class Index extends React.Component {
     query pages_dataQuery {
       data {
         statistics {
+          ...Statistics_statistics
           total
-          time
-          price
-          distance
         }
         area {
           id
@@ -147,44 +146,7 @@ export default class Index extends React.Component {
         <Header />
 
         <div className={styles.root}>
-          <Row gutter={16}>
-            {[
-              {
-                key: 'total',
-                title: '總投票人數',
-                unit: '人',
-              },
-              {
-                key: 'time',
-                title: '總旅途時間',
-                unit: '小時',
-              },
-              {
-                key: 'price',
-                title: '總旅途費用',
-                unit: 'NTD',
-              },
-              {
-                key: 'distance',
-                title: '總旅途距離',
-                unit: 'km',
-              },
-            ].map(({ key, title, unit }) => (
-              <Col key={key} lg={6} md={12} sm={24}>
-                <div className={styles.card}>
-                  <h3>{title}</h3>
-
-                  <p>
-                    {['time', 'distance'].includes(key)
-                      ? statistics[key].toFixed(2)
-                      : statistics[key]}
-
-                    <font>{unit}</font>
-                  </p>
-                </div>
-              </Col>
-            ))}
-          </Row>
+          <Statistics statistics={statistics} />
 
           <Row className={styles.map} gutter={16} type="flex">
             <Col lg={18} xs={24}>
@@ -251,7 +213,7 @@ export default class Index extends React.Component {
         >
           {users.map(({ id, fromCity, toCity, name, message }) => (
             <div key={id} className={styles.cardWrapper}>
-              <div className={styles.card}>
+              <div className={`card ${styles.card}`}>
                 <h1>
                   {fromCity}
                   <ArrowIcon className={styles.icon} />
