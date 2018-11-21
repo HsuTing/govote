@@ -1,0 +1,76 @@
+@import './constants.less';
+
+:global(#__next) {
+  .header {
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 80px 0px 0px;
+
+    .text {
+      position: absolute;
+      top: 23px;
+    }
+  }
+
+  .carousel {
+    position: relative;
+    left: @PADDING_LEFT * -1;
+    margin: 20px 0px;
+    width: 100vw;
+    font-size: 18px;
+
+    .cardWrapper {
+      padding: 15px;
+
+      .card {
+        padding: 24px 40px;
+
+        & > * {
+          font-size: inherit;
+        }
+
+        h1 {
+          color: #fabf3e;
+        }
+
+        .icon {
+          margin: 0px 5px;
+        }
+
+        h3 {
+          margin: 5px 0px;
+          color: #2ed3e9;
+        }
+
+        & > div {
+          display: flex;
+
+          & > p:first-child {
+            margin: 0px 5px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    :global(.ant-btn) {
+      width: 64px;
+      height: 64px;
+      font-size: 25px;
+      color: #2ed3e9;
+      border: 0px;
+      box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+
+      &:hover {
+        color: #ffffff;
+        background: #2ed3e9;
+      }
+
+      &:first-child {
+        margin: 0px 10px 0px 0px;
+      }
+    }
+  }
+}

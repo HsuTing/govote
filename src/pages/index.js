@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'react-relay';
-import { Button, Row, Col, Carousel } from 'antd';
 
 import Header from 'components/Header';
 import Statistics from 'components/Statistics';
 import Map from 'components/Map';
 import Transportation from 'components/Transportation';
+import Messages from 'components/Messages';
 import Share from 'components/Share';
-import UsersIcon from 'static/UsersIcon.svg';
-import ArrowIcon from 'static/ArrowIcon.svg';
 import styles from 'components/styles/index.less';
-import { TRANSPORTATION_ARRAY } from 'utils/constants';
 
 export default class Index extends React.Component {
   carouselRef = React.createRef();
+
+  static propTypes = {
+    data: PropTypes.shape({}).isRequired,
+  };
 
   static query = graphql`
     query pages_dataQuery {
@@ -30,11 +31,7 @@ export default class Index extends React.Component {
           ...Transportation_transportation
         }
         users {
-          id
-          name
-          fromCity
-          toCity
-          message
+          ...Messages_users
         }
       }
     }
@@ -56,60 +53,7 @@ export default class Index extends React.Component {
 
           <Transportation transportation={transportation} />
 
-          <div className={styles.usersHeader}>
-            <UsersIcon />
-
-            <div className={styles.text}>要回家投票的人說</div>
-          </div>
-        </div>
-
-        <Carousel
-          ref={this.carouselRef}
-          className={styles.carousel}
-          slidesToShow={3}
-          slidesToScroll={3}
-          rows={2}
-          dots={false}
-          draggable
-          infinite
-        >
-          {users.map(({ id, fromCity, toCity, name, message }) => (
-            <div key={id} className={styles.cardWrapper}>
-              <div className={`card ${styles.card}`}>
-                <h1>
-                  {fromCity}
-                  <ArrowIcon className={styles.icon} />
-                  {toCity}
-                </h1>
-
-                <h3>{name}</h3>
-
-                <div>
-                  <p>“</p>
-
-                  <p>{message}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Carousel>
-
-        <div className={styles.carouselButtons}>
-          <Button
-            shape="circle"
-            icon="left"
-            onClick={() => {
-              this.carouselRef.current.slick.slickPrev();
-            }}
-          />
-
-          <Button
-            shape="circle"
-            icon="right"
-            onClick={() => {
-              this.carouselRef.current.slick.slickNext();
-            }}
-          />
+          <Messages users={users} />
         </div>
 
         <Share />

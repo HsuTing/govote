@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import { graphql, createFragmentContainer } from 'react-relay';
 import { Row, Col } from 'antd';
 
-import { TRANSPORTATION_ARRAY } from 'utils/constants';
-
 import styles from './styles/map.less';
 
 class Map extends React.PureComponent {
