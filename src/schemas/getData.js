@@ -75,7 +75,10 @@ const getArea = data =>
           answers.find(({ field: { ref } }) => ref === IDS.fromCityFieldId) ||
           answers.find(
             ({ field: { ref } }) => ref === IDS.fromOtherCityFieldId,
-          );
+          ) ||
+          {};
+
+        if (!fromCity) return result;
 
         const item = area.list.find(({ name }) => name === fromCity) || {
           id: uuid(),
