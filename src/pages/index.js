@@ -53,22 +53,9 @@ export default class Index extends React.Component {
         <div className={styles.root}>
           <Statistics statistics={statistics} />
 
+          <Map statistics={statistics} area={area} />
+
           <Row className={styles.map} gutter={16} type="flex">
-            <Col lg={18} xs={24}>
-              <Map statistics={statistics} area={area} />
-            </Col>
-
-            <Col className={styles.area} lg={6} xs={24}>
-              居住地統計
-              <ol>
-                {area.map(({ id, name, value }) => (
-                  <li key={id}>
-                    {name}：{value} 人
-                  </li>
-                ))}
-              </ol>
-            </Col>
-
             <Col className={styles.transportation} span={24}>
               交通方式統計
               <div className={styles.bar}>

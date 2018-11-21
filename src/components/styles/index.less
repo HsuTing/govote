@@ -1,28 +1,10 @@
-@PADDING_TOP: 60px;
-@PADDING_LEFT: 74px;
+@import './constants.less';
 
 :global(#__next) {
   // overwrite antd
   :global(.ant-btn:not(.ant-btn-icon-only)) {
     height: unset;
     font-weight: bold;
-  }
-
-  :global(.mapboxgl-popup-tip) {
-    display: none;
-  }
-
-  :global(.map-pop) {
-    :global(.mapboxgl-popup-content) {
-      padding: 8px 12px;
-      color: white;
-      background: rgba(0, 0, 0, 0.75);
-      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
-    }
-
-    ol {
-      padding: 0px 0px 0px 14px;
-    }
   }
 
   // share class
@@ -44,23 +26,6 @@
   // pages
   .root {
     padding: @PADDING_TOP @PADDING_LEFT 0px;
-
-    .map {
-      margin: @PADDING_TOP 0px;
-
-      :global(#map) {
-        height: 450px;
-      }
-
-      .area {
-        font-size: 20px;
-
-        ol {
-          margin: 35px 0px 0px;
-          padding: 0px 0px 0px 20px;
-        }
-      }
-    }
 
     .color-0 {
       background: #ff6666;

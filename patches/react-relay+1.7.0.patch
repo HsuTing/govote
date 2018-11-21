@@ -1,0 +1,12 @@
+patch-package
+--- a/node_modules/react-relay/lib/ReactRelayQueryRenderer.js
++++ b/node_modules/react-relay/lib/ReactRelayQueryRenderer.js
+@@ -52,6 +52,8 @@ var ReactRelayQueryRenderer = function (_React$Component) {
+   function ReactRelayQueryRenderer(props, context) {
+     (0, _classCallCheck3['default'])(this, ReactRelayQueryRenderer);
+ 
++    requestCache = {};
++
+     // Callbacks are attached to the current instance and shared with static
+     // lifecyles by bundling with state. This is okay to do because the
+     // callbacks don't change in reaction to props. However we should not

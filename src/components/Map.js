@@ -2,8 +2,11 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import PropTypes from 'prop-types';
 import { graphql, createFragmentContainer } from 'react-relay';
+import { Row, Col } from 'antd';
 
 import { TRANSPORTATION_ARRAY } from 'utils/constants';
+
+import styles from './styles/map.less';
 
 class Map extends React.PureComponent {
   static propTypes = {
@@ -98,7 +101,26 @@ class Map extends React.PureComponent {
   }
 
   render() {
-    return <div id="map" />;
+    const { area } = this.props;
+
+    return (
+      <Row className={styles.root} gutter={16} type="flex">
+        <Col lg={18} xs={24}>
+          <div id="map" />
+        </Col>
+
+        <Col className={styles.area} lg={6} xs={24}>
+          居住地統計
+          <ol>
+            {area.map(({ id, name, value }) => (
+              <li key={id}>
+                {name}：{value} 人
+              </li>
+            ))}
+          </ol>
+        </Col>
+      </Row>
+    );
   }
 }
 

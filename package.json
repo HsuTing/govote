@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "node --inspect ./src/server",
     "heroku-postbuild": "yarn relay && yarn prod",
+    "postinstall": "patch-package",
     "prod": "next build ./src",
     "relay": "relay-compiler --src ./src --exclude --schema ./schema.graphql --exclude=[**/.next/**]",
     "start": "NODE_ENV=production node ./src/server",
@@ -33,6 +34,8 @@
     "moment": "^2.22.2",
     "next": "^7.0.2",
     "output-file-sync": "^2.0.1",
+    "patch-package": "^5.1.1",
+    "postinstall-prepare": "^1.0.1",
     "prop-types": "^15.6.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
