@@ -7,12 +7,8 @@ import { Affix, Button, Row, Col, Carousel } from 'antd';
 import MapImg from 'static/MapImg.svg';
 import UsersIcon from 'static/UsersIcon.svg';
 import ArrowIcon from 'static/ArrowIcon.svg';
-import Vote from 'static/Vote.svg';
-import VoteMessage from 'static/VoteMessage.svg';
-import FBIcon from 'static/FBIcon.svg';
-import TwitterIcon from 'static/TwitterIcon.svg';
-import LinkinIcon from 'static/LinkinIcon.svg';
-import styles from 'components/styles.less';
+import Share from 'components/Share';
+import styles from 'components/styles/index.less';
 import { TRANSPORTATION_ARRAY } from 'utils/constants';
 
 export default class Index extends React.Component {
@@ -322,64 +318,9 @@ export default class Index extends React.Component {
           />
         </div>
 
-        <div className={styles.share}>
-          <h2>歡迎將網站分享出去，鼓勵更多人一起「#1124為愛返家」吧！</h2>
-
-          <a
-            href="http://www.facebook.com/share.php?u=https://govote-tw.herokuapp.com"
-            target="_blank"
-          >
-            <Button className={styles.button} type="primary">
-              立即分享！
-            </Button>
-          </a>
-        </div>
+        <Share />
 
         <Row className={styles.vote} type="flex">
-          <Col lg={12} xs={24} className={styles.voteSvg}>
-            <Vote />
-
-            <VoteMessage className={styles.message} />
-          </Col>
-
-          <Col lg={12} xs={24}>
-            <div className={styles.info}>
-              <div>
-                <h3>聯絡我們</h3>
-
-                <div className={styles.email}>GovoteTW@gmail.com</div>
-
-                <h3>分享出去</h3>
-
-                <div>
-                  {[
-                    {
-                      url: 'http://www.facebook.com/share.php?u=',
-                      Icon: FBIcon,
-                    },
-                    {
-                      url: 'https://twitter.com/intent/tweet?text=',
-                      Icon: TwitterIcon,
-                    },
-                    {
-                      url:
-                        'https://www.linkedin.com/sharing/share-offsite/?url=',
-                      Icon: LinkinIcon,
-                    },
-                  ].map(({ url, Icon }) => (
-                    <a
-                      key={url}
-                      href={`${url}https://govote-tw.herokuapp.com`}
-                      target="_blank"
-                    >
-                      <Icon />
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </Col>
-
           <Col span={24} className={styles.copyRight}>
             ©2018 GovoteTW. All rights reserved.
           </Col>
