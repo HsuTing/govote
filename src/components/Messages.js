@@ -11,6 +11,10 @@ import styles from './styles/messages.less';
 class Messages extends React.Component {
   carouselRef = React.createRef();
 
+  static propTypes = {
+    users: PropTypes.arrayOf(PropTypes.shape({}).isRequired).isRequired,
+  };
+
   render() {
     const { users } = this.props;
 
