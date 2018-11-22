@@ -28,6 +28,10 @@
   // pages
   .root {
     padding: @PADDING_TOP @PADDING_LEFT;
+
+    @media @SM_MEDIA {
+      padding: @PADDING_TOP @SMALL_PADDING_LEFT;
+    }
   }
 
   .copyright {
@@ -38,6 +42,11 @@
 
     & > a {
       margin: 0px 40px 0px 0px;
+
+      @media @SM_MEDIA {
+        display: block;
+        margin: 0px 0px 20px;
+      }
     }
   }
 }
