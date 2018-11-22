@@ -210,28 +210,25 @@ const getTransportation = data => {
     );
 };
 
-module.exports = memoizeOne(
-  ({ items }) => {
-    log(chalk`{green schema ➜} count data`);
+module.exports = ({ items }) => {
+  log(chalk`{green schema ➜} count data`);
 
-    const networkIds = [];
-    const data = items
-      .reverse()
-      .filter(({ metadata: { network_id }, answers }) => {
-        if (networkIds.includes(network_id)) return false;
+  const networkIds = [];
+  const data = items
+    .reverse()
+    .filter(({ metadata: { network_id }, answers }) => {
+      if (networkIds.includes(network_id)) return false;
 
-        networkIds.push(networkIds);
-        return true;
-      })
-      .reverse();
+      networkIds.push(networkIds);
+      return true;
+    })
+    .reverse();
 
-    return {
-      id: uuid(),
-      statistics: getStatistics(data),
-      area: getArea(data),
-      users: getUsers(data),
-      transportation: getTransportation(data),
-    };
-  },
-  (newData, prevData) => newData.items[0].token === prevData.items[0].token,
-);
+  return {
+    id: uuid(),
+    statistics: getStatistics(data),
+    area: getArea(data),
+    users: getUsers(data),
+    transportation: getTransportation(data),
+  };
+};
