@@ -63,7 +63,12 @@ const getArea = data =>
       (result, { answers }) => {
         const {
           choice: { label },
-        } = answers.find(({ field: { ref } }) => ref === IDS.areaFieldId);
+        } = answers.find(({ field: { ref } }) => ref === IDS.areaFieldId) || {
+          choice: {},
+        };
+
+        if (!label) return result;
+
         const area = result.find(({ name }) =>
           RegExp(name === '本島' ? '台灣及離島地區' : name).test(label),
         );
