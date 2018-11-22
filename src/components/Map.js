@@ -27,6 +27,7 @@ class Map extends React.PureComponent {
       style: 'mapbox://styles/mapbox/light-v9',
       maxBounds: [[-180, -85], [180, 85]],
     });
+    const MIN_RADIUS = 5;
     const MAX_RADIUS = 30;
     const popup = new mapboxgl.Popup({
       closeButton: false,
@@ -59,7 +60,7 @@ class Map extends React.PureComponent {
           source: id,
           type: 'circle',
           paint: {
-            'circle-radius': MAX_RADIUS * (value / total),
+            'circle-radius': MAX_RADIUS * (value / total) + MIN_RADIUS,
             'circle-color': 'rgba(0, 80, 179, 0.3)',
             'circle-stroke-width': 1,
             'circle-stroke-color': '#0050b3',
