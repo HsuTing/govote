@@ -637,11 +637,11 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
-              "捷運",
-              "徒步",
               "飛機",
-              "汽車/機車"
+              "火車",
+              "汽車/機車",
+              "徒步",
+              "捷運"
             ]
           }
         },
@@ -1756,8 +1756,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
-              "高鐵"
+              "高鐵",
+              "客運"
             ]
           }
         },
@@ -1963,10 +1963,10 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "捷運",
               "汽車/機車",
-              "高鐵",
               "公車",
-              "捷運"
+              "高鐵"
             ]
           }
         },
@@ -2069,8 +2069,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "徒步",
-              "公車"
+              "公車",
+              "徒步"
             ]
           }
         },
@@ -2276,8 +2276,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
               "飛機",
+              "火車",
               "汽車/機車"
             ]
           }
@@ -2484,10 +2484,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "捷運",
               "汽車/機車",
               "公車",
-              "高鐵"
+              "高鐵",
+              "捷運"
             ]
           }
         },
@@ -2590,9 +2590,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
               "捷運",
-              "汽車/機車"
+              "汽車/機車",
+              "高鐵"
             ]
           }
         },
@@ -2987,8 +2987,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
-              "汽車/機車"
+              "汽車/機車",
+              "高鐵"
             ]
           }
         },
@@ -3683,10 +3683,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "捷運",
-              "徒步",
               "汽車/機車",
-              "高鐵"
+              "高鐵",
+              "徒步",
+              "捷運"
             ]
           }
         },
@@ -3789,8 +3789,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "火車"
+              "火車",
+              "汽車/機車"
             ]
           }
         },
@@ -3996,11 +3996,11 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "捷運",
               "腳踏車",
+              "飛機",
+              "捷運",
               "徒步",
-              "汽車/機車",
-              "飛機"
+              "汽車/機車"
             ]
           }
         },
@@ -4103,9 +4103,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "腳踏車",
               "火車",
-              "公車",
-              "腳踏車"
+              "公車"
             ]
           }
         },
@@ -4208,9 +4208,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "客運",
               "高鐵",
-              "汽車/機車",
-              "客運"
+              "汽車/機車"
             ]
           }
         },
@@ -4510,8 +4510,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "公車",
-              "捷運"
+              "捷運",
+              "公車"
             ]
           }
         },
@@ -4643,6 +4643,109 @@
           },
           "type": "text",
           "text": "加油💪💪"
+        }
+      ]
+    },
+    {
+      "landing_id": "8e7ead458b9e59e5506478eb47d292c4",
+      "token": "8e7ead458b9e59e5506478eb47d292c4",
+      "response_id": "8e7ead458b9e59e5506478eb47d292c4",
+      "landed_at": "2018-11-22T15:36:39Z",
+      "submitted_at": "2018-11-22T15:46:12Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; ASUS_Z01KD Build/OPR6.170623.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "2047a6f7ea",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺南市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "彰化縣"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "客運"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "720"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "300"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "147"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "阿兩"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "只差一哩路，大家努力投出兩好三壞，打破虛偽的愛家公投"
         }
       ]
     },
@@ -4802,8 +4905,8 @@
           "choices": {
             "labels": [
               "汽車/機車",
-              "高鐵",
-              "火車"
+              "火車",
+              "高鐵"
             ]
           }
         },
@@ -5009,9 +5112,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "汽車/機車",
               "捷運",
               "徒步",
-              "汽車/機車",
               "公車"
             ]
           }
@@ -5154,6 +5257,111 @@
           },
           "type": "text",
           "text": "雙翼"
+        }
+      ]
+    },
+    {
+      "landing_id": "d102886f434ec73cd0931d6e1e773440",
+      "token": "d102886f434ec73cd0931d6e1e773440",
+      "response_id": "d102886f434ec73cd0931d6e1e773440",
+      "landed_at": "2018-11-22T15:23:24Z",
+      "submitted_at": "2018-11-22T15:46:10Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Version/10.0 Mobile/14D27 Safari/602.1",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "20344c782c",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "高雄市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "新竹市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "高鐵",
+              "捷運",
+              "汽車/機車"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "2274"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "3小時52分"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "589.26"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "二二"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "算成數字才發現也是花了蠻多錢、移動了蠻長的距離，但別人移動得更遠呢！為了支持認為對的理念，再遠也是值得的"
         }
       ]
     },
@@ -5303,9 +5511,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "徒步",
               "汽車/機車",
-              "高鐵"
+              "高鐵",
+              "徒步"
             ]
           }
         },
@@ -5511,8 +5719,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "飛機",
-              "汽車/機車"
+              "汽車/機車",
+              "飛機"
             ]
           }
         },
@@ -5560,6 +5768,110 @@
           },
           "type": "text",
           "text": "Just do it."
+        }
+      ]
+    },
+    {
+      "landing_id": "179e43ad86fed4d61fc354ccb89b7d82",
+      "token": "179e43ad86fed4d61fc354ccb89b7d82",
+      "response_id": "179e43ad86fed4d61fc354ccb89b7d82",
+      "landed_at": "2018-11-22T15:13:55Z",
+      "submitted_at": "2018-11-22T15:25:26Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+        "platform": "other",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "9b453bb400",
+        "browser": "default"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "桃園市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "花蓮縣"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "火車",
+              "公車"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "1048"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "443"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "194"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "夏犬良"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "如果覺得是對的事情，那就去勇敢實踐吧！"
         }
       ]
     },
@@ -6132,8 +6444,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "徒步",
               "客運",
+              "徒步",
               "捷運"
             ]
           }
@@ -6237,8 +6549,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
-              "腳踏車"
+              "腳踏車",
+              "火車"
             ]
           }
         },
@@ -6444,8 +6756,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "徒步"
+              "徒步",
+              "汽車/機車"
             ]
           }
         },
@@ -6754,8 +7066,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
               "汽車/機車",
+              "客運",
               "徒步"
             ]
           }
@@ -7039,8 +7351,8 @@
           "choices": {
             "labels": [
               "捷運",
-              "公車",
               "徒步",
+              "公車",
               "客運"
             ]
           }
@@ -7547,8 +7859,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "公車",
-              "客運"
+              "客運",
+              "公車"
             ]
           }
         },
@@ -7841,8 +8153,8 @@
           "choices": {
             "labels": [
               "火車",
-              "公車",
-              "高鐵"
+              "高鐵",
+              "公車"
             ]
           }
         },
@@ -8039,8 +8351,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
               "火車",
+              "高鐵",
               "公車"
             ]
           }
@@ -8350,8 +8662,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
               "汽車/機車",
+              "高鐵",
               "捷運"
             ]
           }
@@ -8653,10 +8965,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
               "汽車/機車",
-              "高鐵",
-              "火車"
+              "火車",
+              "客運",
+              "高鐵"
             ]
           }
         },
@@ -8872,9 +9184,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
               "火車",
-              "客運"
+              "客運",
+              "高鐵"
             ]
           }
         },
@@ -9156,8 +9468,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
               "火車",
+              "高鐵",
               "公車"
             ]
           }
@@ -10165,9 +10477,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "公車",
+              "客運",
               "徒步",
-              "客運"
+              "公車"
             ]
           }
         },
@@ -10458,9 +10770,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "公車",
               "徒步",
-              "捷運"
+              "捷運",
+              "公車"
             ]
           }
         },
@@ -10854,9 +11166,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
+              "汽車/機車",
               "火車",
-              "汽車/機車"
+              "高鐵"
             ]
           }
         },
@@ -11269,9 +11581,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
               "捷運",
-              "公車"
+              "公車",
+              "汽車/機車"
             ]
           }
         },
@@ -11374,8 +11686,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
-              "汽車/機車"
+              "汽車/機車",
+              "客運"
             ]
           }
         },
@@ -11865,8 +12177,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "高鐵"
+              "高鐵",
+              "汽車/機車"
             ]
           }
         },
@@ -12345,11 +12657,11 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "徒步",
               "高鐵",
               "捷運",
-              "火車",
-              "汽車/機車"
+              "徒步",
+              "汽車/機車",
+              "火車"
             ]
           }
         },
@@ -12838,8 +13150,8 @@
           "choices": {
             "labels": [
               "高鐵",
-              "汽車/機車",
-              "徒步"
+              "徒步",
+              "汽車/機車"
             ]
           }
         },
@@ -12942,8 +13254,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
-              "飛機"
+              "飛機",
+              "高鐵"
             ]
           }
         },
@@ -13198,8 +13510,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
-              "汽車/機車"
+              "汽車/機車",
+              "火車"
             ]
           }
         },
@@ -13602,8 +13914,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
-              "高鐵"
+              "高鐵",
+              "火車"
             ]
           }
         },
@@ -13810,9 +14122,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "公車",
               "火車",
-              "徒步",
-              "公車"
+              "徒步"
             ]
           }
         },
@@ -14112,8 +14424,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
               "火車",
+              "高鐵",
               "客運"
             ]
           }
@@ -14217,10 +14529,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "捷運",
-              "公車",
+              "飛機",
               "汽車/機車",
-              "飛機"
+              "公車",
+              "捷運"
             ]
           }
         },
@@ -14323,9 +14635,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "捷運",
+              "高鐵",
               "公車",
-              "高鐵"
+              "捷運"
             ]
           }
         },
@@ -14534,11 +14846,11 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
-              "徒步",
-              "飛機",
               "汽車/機車",
-              "捷運"
+              "客運",
+              "飛機",
+              "捷運",
+              "徒步"
             ]
           }
         },
@@ -15053,8 +15365,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "飛機",
-              "汽車/機車"
+              "汽車/機車",
+              "飛機"
             ]
           }
         },
@@ -16448,8 +16760,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
-              "火車"
+              "火車",
+              "客運"
             ]
           }
         },
@@ -16655,8 +16967,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
-              "汽車/機車"
+              "汽車/機車",
+              "高鐵"
             ]
           }
         },
@@ -17249,9 +17561,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
               "火車",
-              "客運"
+              "客運",
+              "高鐵"
             ]
           }
         },
@@ -17757,10 +18069,10 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "汽車/機車",
               "火車",
-              "徒步",
               "高鐵",
-              "汽車/機車"
+              "徒步"
             ]
           }
         },
@@ -18005,109 +18317,6 @@
           },
           "type": "text",
           "text": "狐加磁"
-        }
-      ]
-    },
-    {
-      "landing_id": "35dcb0d2c0ba7104b8da52fe52f40f27",
-      "token": "35dcb0d2c0ba7104b8da52fe52f40f27",
-      "response_id": "35dcb0d2c0ba7104b8da52fe52f40f27",
-      "landed_at": "2018-11-18T14:39:56Z",
-      "submitted_at": "2018-11-18T14:41:30Z",
-      "metadata": {
-        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
-        "platform": "other",
-        "referer": "https://harrison98.typeform.com/to/pJAGob?fbclid=IwAR1EyiuM0oET9Pls4o4IQpZjv2TD0Tb2A2MSUMuPEk-R014LzSKeRQ0p6NM",
-        "network_id": "19d5ebdf3e",
-        "browser": "default"
-      },
-      "answers": [
-        {
-          "field": {
-            "id": "BWgEwL363A7E",
-            "type": "multiple_choice",
-            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
-          },
-          "type": "choice",
-          "choice": {
-            "label": "台灣及離島地區"
-          }
-        },
-        {
-          "field": {
-            "id": "W9Grb5GFuN6r",
-            "type": "short_text",
-            "ref": "8de505e3-d39d-477f-b17e-f483e45f1abc"
-          },
-          "type": "text",
-          "text": "台北"
-        },
-        {
-          "field": {
-            "id": "HzfhM6dNeB4r",
-            "type": "dropdown",
-            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
-          },
-          "type": "text",
-          "text": "桃園市"
-        },
-        {
-          "field": {
-            "id": "Ocj4a6DfONew",
-            "type": "multiple_choice",
-            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
-          },
-          "type": "choices",
-          "choices": {
-            "labels": [
-              "客運"
-            ]
-          }
-        },
-        {
-          "field": {
-            "id": "vg4vGGsJorHV",
-            "type": "short_text",
-            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
-          },
-          "type": "text",
-          "text": "120"
-        },
-        {
-          "field": {
-            "id": "mRNioj4Xlsil",
-            "type": "short_text",
-            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
-          },
-          "type": "text",
-          "text": "2hr"
-        },
-        {
-          "field": {
-            "id": "NwbdNHzw6LGL",
-            "type": "short_text",
-            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
-          },
-          "type": "text",
-          "text": "wwwwwww"
-        },
-        {
-          "field": {
-            "id": "YIICwiitp32K",
-            "type": "short_text",
-            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
-          },
-          "type": "text",
-          "text": "人父"
-        },
-        {
-          "field": {
-            "id": "URizHdjLcGb7",
-            "type": "short_text",
-            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
-          },
-          "type": "text",
-          "text": "大家安安"
         }
       ]
     },
@@ -18218,6 +18427,109 @@
       ]
     },
     {
+      "landing_id": "35dcb0d2c0ba7104b8da52fe52f40f27",
+      "token": "35dcb0d2c0ba7104b8da52fe52f40f27",
+      "response_id": "35dcb0d2c0ba7104b8da52fe52f40f27",
+      "landed_at": "2018-11-18T14:39:56Z",
+      "submitted_at": "2018-11-18T14:41:30Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+        "platform": "other",
+        "referer": "https://harrison98.typeform.com/to/pJAGob?fbclid=IwAR1EyiuM0oET9Pls4o4IQpZjv2TD0Tb2A2MSUMuPEk-R014LzSKeRQ0p6NM",
+        "network_id": "19d5ebdf3e",
+        "browser": "default"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "W9Grb5GFuN6r",
+            "type": "short_text",
+            "ref": "8de505e3-d39d-477f-b17e-f483e45f1abc"
+          },
+          "type": "text",
+          "text": "台北"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "桃園市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "客運"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "120"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "2hr"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "wwwwwww"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "人父"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "大家安安"
+        }
+      ]
+    },
+    {
       "landing_id": "135479b05b23b637ee9370cd17ca18c1",
       "token": "135479b05b23b637ee9370cd17ca18c1",
       "response_id": "135479b05b23b637ee9370cd17ca18c1",
@@ -18475,10 +18787,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
               "火車",
+              "徒步",
               "高鐵",
-              "徒步"
+              "汽車/機車"
             ]
           }
         },
@@ -18975,9 +19287,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "高鐵",
               "火車",
-              "客運",
-              "高鐵"
+              "客運"
             ]
           }
         },
@@ -19570,8 +19882,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "高鐵"
+              "高鐵",
+              "汽車/機車"
             ]
           }
         },
@@ -19777,8 +20089,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
-              "客運"
+              "客運",
+              "火車"
             ]
           }
         },
@@ -21190,8 +21502,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "飛機"
+              "飛機",
+              "汽車/機車"
             ]
           }
         },
@@ -21688,11 +22000,11 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
               "客運",
+              "徒步",
               "飛機",
-              "捷運",
-              "徒步"
+              "汽車/機車",
+              "捷運"
             ]
           }
         },
@@ -21901,9 +22213,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
+              "捷運",
               "公車",
-              "捷運"
+              "高鐵"
             ]
           }
         },
@@ -22006,10 +22318,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "飛機",
-              "汽車/機車",
+              "捷運",
               "公車",
-              "捷運"
+              "汽車/機車",
+              "飛機"
             ]
           }
         },
@@ -22112,8 +22424,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
               "高鐵",
+              "火車",
               "客運"
             ]
           }
@@ -22414,9 +22726,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "公車",
               "火車",
-              "徒步"
+              "徒步",
+              "公車"
             ]
           }
         },
@@ -22623,8 +22935,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
-              "火車"
+              "火車",
+              "高鐵"
             ]
           }
         },
@@ -23027,8 +23339,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "火車"
+              "火車",
+              "汽車/機車"
             ]
           }
         },
@@ -23301,8 +23613,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "飛機",
-              "高鐵"
+              "高鐵",
+              "飛機"
             ]
           }
         },
@@ -23388,8 +23700,8 @@
           "choices": {
             "labels": [
               "高鐵",
-              "徒步",
-              "汽車/機車"
+              "汽車/機車",
+              "徒步"
             ]
           }
         },
@@ -23886,11 +24198,11 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "徒步",
               "高鐵",
               "捷運",
-              "徒步",
-              "汽車/機車",
-              "火車"
+              "火車",
+              "汽車/機車"
             ]
           }
         },
@@ -24360,8 +24672,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
-              "汽車/機車"
+              "汽車/機車",
+              "高鐵"
             ]
           }
         },
@@ -24860,8 +25172,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "客運"
+              "客運",
+              "汽車/機車"
             ]
           }
         },
@@ -24955,9 +25267,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "汽車/機車",
               "捷運",
-              "公車",
-              "汽車/機車"
+              "公車"
             ]
           }
         },
@@ -25370,9 +25682,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
+              "高鐵",
               "火車",
-              "高鐵"
+              "汽車/機車"
             ]
           }
         },
@@ -25775,9 +26087,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "公車",
               "徒步",
-              "捷運",
-              "公車"
+              "捷運"
             ]
           }
         },
@@ -26068,9 +26380,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
+              "公車",
               "徒步",
-              "公車"
+              "客運"
             ]
           }
         },
@@ -27068,8 +27380,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
               "高鐵",
+              "火車",
               "公車"
             ]
           }
@@ -27370,9 +27682,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "高鐵",
               "火車",
-              "客運",
-              "高鐵"
+              "客運"
             ]
           }
         },
@@ -27570,10 +27882,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "火車",
               "客運",
-              "高鐵"
+              "汽車/機車",
+              "高鐵",
+              "火車"
             ]
           }
         },
@@ -27874,8 +28186,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
               "高鐵",
+              "汽車/機車",
               "捷運"
             ]
           }
@@ -28185,8 +28497,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
               "高鐵",
+              "火車",
               "公車"
             ]
           }
@@ -28394,8 +28706,8 @@
           "choices": {
             "labels": [
               "火車",
-              "高鐵",
-              "公車"
+              "公車",
+              "高鐵"
             ]
           }
         },
@@ -28687,8 +28999,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
-              "公車"
+              "公車",
+              "客運"
             ]
           }
         },
@@ -29186,8 +29498,8 @@
           "choices": {
             "labels": [
               "捷運",
-              "徒步",
               "公車",
+              "徒步",
               "客運"
             ]
           }
@@ -29479,8 +29791,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
               "客運",
+              "汽車/機車",
               "徒步"
             ]
           }
@@ -29781,8 +30093,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "徒步",
-              "汽車/機車"
+              "汽車/機車",
+              "徒步"
             ]
           }
         },
@@ -29988,8 +30300,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "腳踏車",
-              "火車"
+              "火車",
+              "腳踏車"
             ]
           }
         },
@@ -30092,8 +30404,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
               "徒步",
+              "客運",
               "捷運"
             ]
           }
@@ -30663,110 +30975,6 @@
       ]
     },
     {
-      "landing_id": "179e43ad86fed4d61fc354ccb89b7d82",
-      "token": "179e43ad86fed4d61fc354ccb89b7d82",
-      "response_id": "179e43ad86fed4d61fc354ccb89b7d82",
-      "landed_at": "2018-11-22T15:13:55Z",
-      "submitted_at": "2018-11-22T15:25:26Z",
-      "metadata": {
-        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
-        "platform": "other",
-        "referer": "https://harrison98.typeform.com/to/pJAGob",
-        "network_id": "9b453bb400",
-        "browser": "default"
-      },
-      "answers": [
-        {
-          "field": {
-            "id": "BWgEwL363A7E",
-            "type": "multiple_choice",
-            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
-          },
-          "type": "choice",
-          "choice": {
-            "label": "台灣及離島地區"
-          }
-        },
-        {
-          "field": {
-            "id": "fM9wILmNCM8x",
-            "type": "dropdown",
-            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
-          },
-          "type": "text",
-          "text": "桃園市"
-        },
-        {
-          "field": {
-            "id": "HzfhM6dNeB4r",
-            "type": "dropdown",
-            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
-          },
-          "type": "text",
-          "text": "花蓮縣"
-        },
-        {
-          "field": {
-            "id": "Ocj4a6DfONew",
-            "type": "multiple_choice",
-            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
-          },
-          "type": "choices",
-          "choices": {
-            "labels": [
-              "火車",
-              "公車"
-            ]
-          }
-        },
-        {
-          "field": {
-            "id": "vg4vGGsJorHV",
-            "type": "short_text",
-            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
-          },
-          "type": "text",
-          "text": "1048"
-        },
-        {
-          "field": {
-            "id": "mRNioj4Xlsil",
-            "type": "short_text",
-            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
-          },
-          "type": "text",
-          "text": "443"
-        },
-        {
-          "field": {
-            "id": "NwbdNHzw6LGL",
-            "type": "short_text",
-            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
-          },
-          "type": "text",
-          "text": "194"
-        },
-        {
-          "field": {
-            "id": "YIICwiitp32K",
-            "type": "short_text",
-            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
-          },
-          "type": "text",
-          "text": "夏犬良"
-        },
-        {
-          "field": {
-            "id": "URizHdjLcGb7",
-            "type": "short_text",
-            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
-          },
-          "type": "text",
-          "text": "如果覺得是對的事情，那就去勇敢實踐吧！"
-        }
-      ]
-    },
-    {
       "landing_id": "932c59a712e3ced89d56e75f09256a9d",
       "token": "932c59a712e3ced89d56e75f09256a9d",
       "response_id": "932c59a712e3ced89d56e75f09256a9d",
@@ -30818,8 +31026,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "飛機"
+              "飛機",
+              "汽車/機車"
             ]
           }
         },
@@ -31025,9 +31233,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "徒步",
               "汽車/機車",
-              "高鐵",
-              "徒步"
+              "高鐵"
             ]
           }
         },
@@ -31169,111 +31377,6 @@
           },
           "type": "text",
           "text": "M"
-        }
-      ]
-    },
-    {
-      "landing_id": "d102886f434ec73cd0931d6e1e773440",
-      "token": "d102886f434ec73cd0931d6e1e773440",
-      "response_id": "d102886f434ec73cd0931d6e1e773440",
-      "landed_at": "2018-11-22T15:23:24Z",
-      "submitted_at": "2018-11-22T15:46:10Z",
-      "metadata": {
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Version/10.0 Mobile/14D27 Safari/602.1",
-        "platform": "mobile",
-        "referer": "https://harrison98.typeform.com/to/pJAGob",
-        "network_id": "20344c782c",
-        "browser": "touch"
-      },
-      "answers": [
-        {
-          "field": {
-            "id": "BWgEwL363A7E",
-            "type": "multiple_choice",
-            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
-          },
-          "type": "choice",
-          "choice": {
-            "label": "台灣及離島地區"
-          }
-        },
-        {
-          "field": {
-            "id": "fM9wILmNCM8x",
-            "type": "dropdown",
-            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
-          },
-          "type": "text",
-          "text": "高雄市"
-        },
-        {
-          "field": {
-            "id": "HzfhM6dNeB4r",
-            "type": "dropdown",
-            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
-          },
-          "type": "text",
-          "text": "新竹市"
-        },
-        {
-          "field": {
-            "id": "Ocj4a6DfONew",
-            "type": "multiple_choice",
-            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
-          },
-          "type": "choices",
-          "choices": {
-            "labels": [
-              "高鐵",
-              "捷運",
-              "汽車/機車"
-            ]
-          }
-        },
-        {
-          "field": {
-            "id": "vg4vGGsJorHV",
-            "type": "short_text",
-            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
-          },
-          "type": "text",
-          "text": "2274"
-        },
-        {
-          "field": {
-            "id": "mRNioj4Xlsil",
-            "type": "short_text",
-            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
-          },
-          "type": "text",
-          "text": "3小時52分"
-        },
-        {
-          "field": {
-            "id": "NwbdNHzw6LGL",
-            "type": "short_text",
-            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
-          },
-          "type": "text",
-          "text": "589.26"
-        },
-        {
-          "field": {
-            "id": "YIICwiitp32K",
-            "type": "short_text",
-            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
-          },
-          "type": "text",
-          "text": "二二"
-        },
-        {
-          "field": {
-            "id": "URizHdjLcGb7",
-            "type": "short_text",
-            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
-          },
-          "type": "text",
-          "text": "算成數字才發現也是花了蠻多錢、移動了蠻長的距離，但別人移動得更遠呢！為了支持認為對的理念，再遠也是值得的"
         }
       ]
     },
@@ -31423,9 +31526,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
               "捷運",
               "徒步",
+              "汽車/機車",
               "公車"
             ]
           }
@@ -31633,8 +31736,8 @@
           "choices": {
             "labels": [
               "汽車/機車",
-              "火車",
-              "高鐵"
+              "高鐵",
+              "火車"
             ]
           }
         },
@@ -31789,109 +31892,6 @@
       ]
     },
     {
-      "landing_id": "8e7ead458b9e59e5506478eb47d292c4",
-      "token": "8e7ead458b9e59e5506478eb47d292c4",
-      "response_id": "8e7ead458b9e59e5506478eb47d292c4",
-      "landed_at": "2018-11-22T15:36:39Z",
-      "submitted_at": "2018-11-22T15:46:12Z",
-      "metadata": {
-        "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; ASUS_Z01KD Build/OPR6.170623.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]",
-        "platform": "mobile",
-        "referer": "https://harrison98.typeform.com/to/pJAGob",
-        "network_id": "2047a6f7ea",
-        "browser": "touch"
-      },
-      "answers": [
-        {
-          "field": {
-            "id": "BWgEwL363A7E",
-            "type": "multiple_choice",
-            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
-          },
-          "type": "choice",
-          "choice": {
-            "label": "台灣及離島地區"
-          }
-        },
-        {
-          "field": {
-            "id": "fM9wILmNCM8x",
-            "type": "dropdown",
-            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
-          },
-          "type": "text",
-          "text": "臺南市"
-        },
-        {
-          "field": {
-            "id": "HzfhM6dNeB4r",
-            "type": "dropdown",
-            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
-          },
-          "type": "text",
-          "text": "彰化縣"
-        },
-        {
-          "field": {
-            "id": "Ocj4a6DfONew",
-            "type": "multiple_choice",
-            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
-          },
-          "type": "choices",
-          "choices": {
-            "labels": [
-              "客運"
-            ]
-          }
-        },
-        {
-          "field": {
-            "id": "vg4vGGsJorHV",
-            "type": "short_text",
-            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
-          },
-          "type": "text",
-          "text": "720"
-        },
-        {
-          "field": {
-            "id": "mRNioj4Xlsil",
-            "type": "short_text",
-            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
-          },
-          "type": "text",
-          "text": "300"
-        },
-        {
-          "field": {
-            "id": "NwbdNHzw6LGL",
-            "type": "short_text",
-            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
-          },
-          "type": "text",
-          "text": "147"
-        },
-        {
-          "field": {
-            "id": "YIICwiitp32K",
-            "type": "short_text",
-            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
-          },
-          "type": "text",
-          "text": "阿兩"
-        },
-        {
-          "field": {
-            "id": "URizHdjLcGb7",
-            "type": "short_text",
-            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
-          },
-          "type": "text",
-          "text": "只差一哩路，大家努力投出兩好三壞，打破虛偽的愛家公投"
-        }
-      ]
-    },
-    {
       "landing_id": "536cb574675d16da406b43b550ff671d",
       "token": "536cb574675d16da406b43b550ff671d",
       "response_id": "536cb574675d16da406b43b550ff671d",
@@ -32027,8 +32027,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "捷運",
-              "公車"
+              "公車",
+              "捷運"
             ]
           }
         },
@@ -32328,9 +32328,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "客運",
               "高鐵",
-              "汽車/機車"
+              "汽車/機車",
+              "客運"
             ]
           }
         },
@@ -32433,9 +32433,9 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "腳踏車",
               "火車",
-              "公車"
+              "公車",
+              "腳踏車"
             ]
           }
         },
@@ -32538,11 +32538,11 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "腳踏車",
-              "飛機",
               "捷運",
+              "腳踏車",
               "徒步",
-              "汽車/機車"
+              "汽車/機車",
+              "飛機"
             ]
           }
         },
@@ -32748,8 +32748,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "火車",
-              "汽車/機車"
+              "汽車/機車",
+              "火車"
             ]
           }
         },
@@ -32852,10 +32852,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "高鐵",
+              "捷運",
               "徒步",
-              "捷運"
+              "汽車/機車",
+              "高鐵"
             ]
           }
         },
@@ -33550,8 +33550,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "汽車/機車",
-              "高鐵"
+              "高鐵",
+              "汽車/機車"
             ]
           }
         },
@@ -33946,9 +33946,9 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "高鐵",
               "捷運",
-              "汽車/機車",
-              "高鐵"
+              "汽車/機車"
             ]
           }
         },
@@ -34051,10 +34051,10 @@
           "type": "choices",
           "choices": {
             "labels": [
+              "捷運",
               "汽車/機車",
               "公車",
-              "高鐵",
-              "捷運"
+              "高鐵"
             ]
           }
         },
@@ -34260,8 +34260,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "飛機",
               "火車",
+              "飛機",
               "汽車/機車"
             ]
           }
@@ -34468,8 +34468,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "公車",
-              "徒步"
+              "徒步",
+              "公車"
             ]
           }
         },
@@ -34572,10 +34572,10 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "捷運",
               "汽車/機車",
+              "高鐵",
               "公車",
-              "高鐵"
+              "捷運"
             ]
           }
         },
@@ -34781,8 +34781,8 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "高鐵",
-              "客運"
+              "客運",
+              "高鐵"
             ]
           }
         },
@@ -35888,11 +35888,11 @@
           "type": "choices",
           "choices": {
             "labels": [
-              "飛機",
               "火車",
-              "汽車/機車",
+              "捷運",
               "徒步",
-              "捷運"
+              "飛機",
+              "汽車/機車"
             ]
           }
         },
