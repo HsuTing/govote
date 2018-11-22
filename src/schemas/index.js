@@ -3,9 +3,8 @@ const path = require('path');
 
 const { makeExecutableSchema } = require('graphql-tools');
 
-const getData = require('./getData');
-
-const cache = require('../utils/cache');
+const cacheRequest = require('../utils/cacheRequest');
+const dataStore = require('../utils/dataStore');
 
 const { log } = console;
 const typeDefs = fs.readFileSync(
@@ -17,9 +16,9 @@ const resolvers = {
   Query: {
     data: async () => {
       try {
-        await cache.get();
+        await cacheRequest.get();
 
-        return getData(cache.store);
+        return dataStore(cacheRequest.store);
       } catch (e) {
         log(e);
       }

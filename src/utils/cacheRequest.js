@@ -10,7 +10,7 @@ const cacheStore = require('../../cache.json');
 const MAX = 1000;
 const { log } = console;
 
-class Cache {
+class CacheRequest {
   constructor() {
     this.store = cacheStore;
     log(chalk`{cyan init} total:`, this.store.items.length);
@@ -51,14 +51,11 @@ class Cache {
     return items;
   }
 
-  async get() {
+  async get(IS_PRODUCTION = process.env.NODE_ENV === 'production') {
     try {
       if (
         moment()
-          .subtract(
-            1,
-            process.env.NODE_ENV === 'production' ? 'seconds' : 'days',
-          )
+          .subtract(1, IS_PRODUCTION ? 'seconds' : 'days')
           .valueOf() > moment(this.store.updateTime).valueOf()
       ) {
         log(chalk`{green start ➜} update`);
@@ -82,4 +79,4 @@ class Cache {
   }
 }
 
-module.exports = new Cache();
+module.exports = new CacheRequest();

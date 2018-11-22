@@ -2,8 +2,8 @@ const memoizeOne = require('memoize-one');
 const chalk = require('chalk');
 const uuid = require('uuid/v4');
 
-const cache = require('../utils/cache');
-const { TRANSPORTATION_ARRAY } = require('../utils/constants');
+const cacheRequest = require('./cacheRequest');
+const { TRANSPORTATION_ARRAY } = require('./constants');
 
 const { log } = console;
 const IDS = {

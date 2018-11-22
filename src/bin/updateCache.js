@@ -2,8 +2,8 @@
 
 require('isomorphic-unfetch');
 
-const cache = require('../utils/cache');
+const cacheRequest = require('../utils/cacheRequest');
 
 (async () => {
-  await cache.get();
+  await cacheRequest.get(true);
 })();
