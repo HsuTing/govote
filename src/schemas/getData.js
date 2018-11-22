@@ -209,12 +209,15 @@ module.exports = memoizeOne(
     log(chalk`{green schema ➜} count data`);
 
     const networkIds = [];
-    const data = items.filter(({ metadata: { network_id }, answers }) => {
-      if (networkIds.includes(network_id)) return false;
+    const data = items
+      .reverse()
+      .filter(({ metadata: { network_id }, answers }) => {
+        if (networkIds.includes(network_id)) return false;
 
-      networkIds.push(networkIds);
-      return true;
-    });
+        networkIds.push(networkIds);
+        return true;
+      })
+      .reverse();
 
     return {
       id: uuid(),

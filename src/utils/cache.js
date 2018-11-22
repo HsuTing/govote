@@ -29,7 +29,11 @@ class Cache {
   }
 
   async updateStore(token) {
-    const { items, page_count } = await this.fetchData(`&after=${token}`);
+    const { items, page_count, description } = await this.fetchData(
+      `&after=${token}`,
+    );
+
+    if (!items) throw new Error(description);
 
     items.reverse();
     log(
