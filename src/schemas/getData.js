@@ -109,6 +109,7 @@ const getArea = data =>
           id: uuid(),
           name: '亞洲',
           value: 0,
+          list: [],
         },
         {
           id: uuid(),
