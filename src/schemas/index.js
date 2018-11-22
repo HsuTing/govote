@@ -18,7 +18,7 @@ const resolvers = {
       try {
         await cacheRequest.get();
 
-        return dataStore(cacheRequest.store);
+        return dataStore.getData(cacheRequest.store);
       } catch (e) {
         log(e);
       }

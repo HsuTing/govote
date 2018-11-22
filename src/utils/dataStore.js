@@ -1,4 +1,3 @@
-const memoizeOne = require('memoize-one');
 const chalk = require('chalk');
 const uuid = require('uuid/v4');
 
@@ -210,25 +209,39 @@ const getTransportation = data => {
     );
 };
 
-module.exports = ({ items }) => {
-  log(chalk`{green schema ➜} count data`);
+class DataStore {
+  constructor() {
+    this.store = [];
+    this.result = {};
+  }
 
-  const networkIds = [];
-  const data = items
-    .reverse()
-    .filter(({ metadata: { network_id }, answers }) => {
-      if (networkIds.includes(network_id)) return false;
+  getData({ items }) {
+    if (this.store[0] && this.store[0].token === items[0].token)
+      return this.result;
 
-      networkIds.push(networkIds);
-      return true;
-    })
-    .reverse();
+    log(chalk`{green schema ➜} count data`);
 
-  return {
-    id: uuid(),
-    statistics: getStatistics(data),
-    area: getArea(data),
-    users: getUsers(data),
-    transportation: getTransportation(data),
-  };
-};
+    const networkIds = [];
+    const data = items
+      .reverse()
+      .filter(({ metadata: { network_id }, answers }) => {
+        if (networkIds.includes(network_id)) return false;
+
+        networkIds.push(networkIds);
+        return true;
+      })
+      .reverse();
+
+    this.store = items;
+    this.result = {
+      id: uuid(),
+      statistics: getStatistics(data),
+      area: getArea(data),
+      users: getUsers(data),
+      transportation: getTransportation(data),
+    };
+    return this.result;
+  }
+}
+
+module.exports = new DataStore();
