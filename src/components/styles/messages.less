@@ -20,6 +20,21 @@
     width: 100vw;
     font-size: 18px;
 
+    @media @SM_MEDIA {
+      &:not(.small) {
+        display: none;
+      }
+    }
+
+    &.small {
+      display: none;
+
+      @media @SM_MEDIA {
+        display: block;
+        left: @SMALL_PADDING_LEFT * -1;
+      }
+    }
+
     .cardWrapper {
       padding: 15px;
 
@@ -60,6 +75,23 @@
     display: flex;
     justify-content: space-between;
 
+    @media @SM_MEDIA {
+      display: block;
+
+      &:not(.small) {
+        display: none;
+      }
+    }
+
+    &.small {
+      display: none;
+
+      @media @SM_MEDIA {
+        display: block;
+        text-align: center;
+      }
+    }
+
     :global(.ant-btn) {
       width: 64px;
       height: 64px;
@@ -71,6 +103,12 @@
       &:hover {
         color: #ffffff;
         background: #2ed3e9;
+      }
+
+      @media @SM_MEDIA {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
       }
     }
 
@@ -101,7 +139,7 @@
     }
 
     .info {
-      text-align: 16px;
+      font-size: 16px;
       line-height: 64px;
       color: rgba(0, 0, 0, 0.45);
     }

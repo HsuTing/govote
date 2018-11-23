@@ -11,15 +11,18 @@ import styles from './styles/messages.less';
 class Messages extends React.Component {
   carouselRef = React.createRef();
 
+  carouselSmallRef = React.createRef();
+
   state = {
     pageIndex: 0,
+    smallPageIndex: 0,
   };
 
   static propTypes = {
     users: PropTypes.arrayOf(PropTypes.shape({}).isRequired).isRequired,
   };
 
-  paginationRender = (page, type, originalElement) => {
+  paginationRender = ref => (page, type, originalElement) => {
     switch (type) {
       case 'prev':
         return (
@@ -27,7 +30,7 @@ class Messages extends React.Component {
             shape="circle"
             icon="left"
             onClick={() => {
-              this.carouselRef.current.slick.slickPrev();
+              ref.current.slick.slickPrev();
             }}
           />
         );
@@ -38,7 +41,7 @@ class Messages extends React.Component {
             shape="circle"
             icon="right"
             onClick={() => {
-              this.carouselRef.current.slick.slickNext();
+              ref.current.slick.slickNext();
             }}
           />
         );
@@ -50,7 +53,7 @@ class Messages extends React.Component {
 
   render() {
     const { users } = this.props;
-    const { pageIndex } = this.state;
+    const { pageIndex, smallPageIndex } = this.state;
 
     return (
       <>
@@ -60,53 +63,85 @@ class Messages extends React.Component {
           <div className={styles.text}>要回家投票的人說</div>
         </div>
 
-        <Carousel
-          ref={this.carouselRef}
-          className={styles.carousel}
-          afterChange={current => {
-            this.setState({ pageIndex: current });
-          }}
-          slidesToShow={3}
-          slidesToScroll={3}
-          rows={2}
-          dots={false}
-          draggable
-          infinite
-        >
-          {users.map(({ id, fromCity, toCity, name, message }) => (
-            <div key={id} className={styles.cardWrapper}>
-              <div className={`card ${styles.card}`}>
-                <h1>
-                  {fromCity}
-                  <ArrowIcon className={styles.icon} />
-                  {toCity}
-                </h1>
+        <>
+          {[
+            {
+              key: 'normal',
+              ref: this.carouselRef,
+              asNavFor: this.carouselSmallRef,
+              size: 3,
+            },
+            {
+              key: 'small',
+              ref: this.carouselSmallRef,
+              asNavFor: this.carouselRef,
+              size: 1,
+            },
+          ].map(({ key, size, ref, ...props }) => (
+            <React.Fragment key={key}>
+              <Carousel
+                {...props}
+                ref={ref}
+                slidesToShow={size}
+                slidesToScroll={size}
+                className={`${styles.carousel} ${
+                  key === 'small' ? styles.small : ''
+                }`}
+                afterChange={current => {
+                  this.setState({
+                    [key === 'small' ? 'smallPageIndex' : 'pageIndex']: current,
+                  });
+                }}
+                rows={2}
+                dots={false}
+                draggable
+                infinite
+              >
+                {users.map(({ id, fromCity, toCity, name, message }) => (
+                  <div key={id} className={styles.cardWrapper}>
+                    <div className={`card ${styles.card}`}>
+                      <h1>
+                        {fromCity}
+                        <ArrowIcon className={styles.icon} />
+                        {toCity}
+                      </h1>
 
-                <h3>{name}</h3>
+                      <h3>{name}</h3>
 
-                <div>
-                  <p>“</p>
+                      <div>
+                        <p>“</p>
 
-                  <p>{message}</p>
-                </div>
+                        <p>{message}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </Carousel>
+
+              <div
+                className={`${styles.buttons} ${
+                  key === 'small' ? styles.small : ''
+                }`}
+              >
+                <Pagination
+                  current={
+                    Math.floor(
+                      (key === 'small' ? smallPageIndex : pageIndex) / size,
+                    ) + 1
+                  }
+                  total={users.length}
+                  itemRender={this.paginationRender(ref)}
+                  onChange={page => {
+                    ref.current.slick.slickGoTo((page - 1) * size);
+                  }}
+                  pageSize={size * 2}
+                />
+
+                <div className={styles.info}>{users.length} 筆</div>
               </div>
-            </div>
+            </React.Fragment>
           ))}
-        </Carousel>
-
-        <div className={styles.buttons}>
-          <Pagination
-            current={Math.floor(pageIndex / 3) + 1}
-            total={users.length}
-            itemRender={this.paginationRender}
-            onChange={page => {
-              this.carouselRef.current.slick.slickGoTo((page - 1) * 3);
-            }}
-            pageSize={6}
-          />
-
-          <div className={styles.info}>{users.length} 筆</div>
-        </div>
+        </>
       </>
     );
   }
