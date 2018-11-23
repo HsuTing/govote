@@ -69,10 +69,32 @@
         color: #ffffff;
         background: #2ed3e9;
       }
+    }
 
-      &:first-child {
-        margin: 0px 10px 0px 0px;
+    :global(.ant-pagination-prev) {
+      margin: 0px 10px 0px 0px;
+    }
+
+    :global(.ant-pagination-next) {
+      margin: 0px 0px 0px 10px;
+    }
+
+    :global(.ant-pagination-item) {
+      background: unset;
+      border: 0px;
+
+      &:global(.ant-pagination-item-active) {
+        color: #ffffff;
+        background: #2ed3e9;
+        border-radius: 4px;
       }
+    }
+
+    :global(.ant-pagination-prev),
+    :global(.ant-pagination-next),
+    :global(.ant-pagination-jump-prev),
+    :global(.ant-pagination-jump-next) {
+      height: auto;
     }
   }
 }
