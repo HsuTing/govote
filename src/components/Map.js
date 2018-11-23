@@ -2,7 +2,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import PropTypes from 'prop-types';
 import { graphql, createFragmentContainer } from 'react-relay';
-import { Row, Col } from 'antd';
+import { Row, Col, Icon } from 'antd';
 
 import styles from './styles/map.less';
 
@@ -10,6 +10,11 @@ class Map extends React.PureComponent {
   static propTypes = {
     area: PropTypes.arrayOf(PropTypes.shape({}).isRequired).isRequired,
     statistics: PropTypes.shape({}).isRequired,
+  };
+
+  state = {
+    name: null,
+    data: [],
   };
 
   componentDidMount() {
@@ -29,11 +34,6 @@ class Map extends React.PureComponent {
     });
     const MIN_RADIUS = 5;
     const MAX_RADIUS = 30;
-    const popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false,
-      className: 'map-pop',
-    });
 
     map.on('load', () => {
       area.forEach(({ id, name, value, list }) => {
@@ -67,33 +67,12 @@ class Map extends React.PureComponent {
           },
         });
 
-        map.on('mouseenter', id, e => {
-          map.getCanvas().style.cursor = 'pointer';
-          popup
-            .setLngLat(coordinates)
-            .setHTML(
-              renderToString(
-                <>
-                  <div>{name}</div>
-
-                  <ol>
-                    {list.map(
-                      ({ id: itemId, name: itemName, value: itemValue }) => (
-                        <li key={itemId}>
-                          {itemName}: {itemValue}人
-                        </li>
-                      ),
-                    )}
-                  </ol>
-                </>,
-              ),
-            )
-            .addTo(map);
+        map.on('click', id, e => {
+          this.setState({ name, data: list });
         });
 
-        map.on('mouseleave', id, () => {
-          map.getCanvas().style.cursor = '';
-          popup.remove();
+        map.on('mouseenter', id, e => {
+          this.setState({ name, data: list });
         });
       });
     });
@@ -101,11 +80,39 @@ class Map extends React.PureComponent {
 
   render() {
     const { area } = this.props;
+    const { name, data } = this.state;
 
     return (
       <Row className={styles.root} gutter={16} type="flex">
-        <Col lg={18} xs={24}>
+        <Col
+          lg={18}
+          xs={24}
+          onMouseLeave={() => {
+            this.setState({ name: null, data: [] });
+          }}
+        >
           <div id="map" />
+
+          {data.length === 0 ? null : (
+            <div
+              className={styles.mapInfo}
+              onClick={() => {
+                this.setState({ name: null, data: [] });
+              }}
+            >
+              <h4>{name}</h4>
+
+              <Icon type="close" />
+
+              <ol>
+                {data.map(({ id, name: itemName, value }) => (
+                  <li key={id}>
+                    {itemName}: {value}人
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
         </Col>
 
         <Col className={styles.area} lg={6} xs={24}>

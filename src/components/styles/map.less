@@ -1,41 +1,51 @@
 @import './constants.less';
 
-:global(#__next) {
-  :global(.mapboxgl-popup-tip) {
-    display: none;
+:global(#__next) .root {
+  margin: @PADDING_TOP 0px;
+
+  :global(#map) {
+    height: 600px;
+
+    @media @SM_MEDIA {
+      margin: 0px 0px 20px;
+    }
   }
 
-  :global(.map-pop) {
-    :global(.mapboxgl-popup-content) {
-      padding: 8px 12px;
-      color: white;
-      background: rgba(0, 0, 0, 0.75);
-      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  & > div:first-child {
+    position: relative;
+  }
+
+  .mapInfo {
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 2;
+
+    i {
+      position: absolute;
+      top: 8px;
+      right: 15px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     ol {
-      padding: 0px 0px 0px 14px;
+      padding: 0px 0px 0px 25px;
     }
   }
 
-  .root {
-    margin: @PADDING_TOP 0px;
+  .area {
+    font-size: 20px;
 
-    :global(#map) {
-      height: 450px;
-
-      @media @SM_MEDIA {
-        margin: 0px 0px 20px;
-      }
-    }
-
-    .area {
-      font-size: 20px;
-
-      ol {
-        margin: 35px 0px 0px;
-        padding: 0px 0px 0px 20px;
-      }
+    ol {
+      margin: 35px 0px 0px;
+      padding: 0px 0px 0px 20px;
     }
   }
 }
