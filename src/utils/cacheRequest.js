@@ -53,6 +53,7 @@ class CacheRequest {
 
   async get(IS_PRODUCTION = process.env.NODE_ENV === 'production') {
     try {
+      /*
       if (
         moment()
           .subtract(1, IS_PRODUCTION ? 'seconds' : 'days')
@@ -66,6 +67,7 @@ class CacheRequest {
         ];
         log(chalk`{green end ➜} update`);
       }
+      */
 
       log(chalk`{cyan new ➜} total:`, this.store.items.length);
       log(chalk`{cyan new ➜} udpate time:`, this.store.updateTime);
