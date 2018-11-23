@@ -68,13 +68,13 @@ class Messages extends React.Component {
             {
               key: 'normal',
               ref: this.carouselRef,
-              asNavFor: this.carouselSmallRef,
+              asNavFor: this.carouselSmallRef.current,
               size: 3,
             },
             {
               key: 'small',
               ref: this.carouselSmallRef,
-              asNavFor: this.carouselRef,
+              asNavFor: this.carouselRef.current,
               size: 1,
             },
           ].map(({ key, size, ref, ...props }) => (
