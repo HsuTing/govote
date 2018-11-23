@@ -57,6 +57,9 @@
   }
 
   .buttons {
+    display: flex;
+    justify-content: space-between;
+
     :global(.ant-btn) {
       width: 64px;
       height: 64px;
@@ -95,6 +98,12 @@
     :global(.ant-pagination-jump-prev),
     :global(.ant-pagination-jump-next) {
       height: auto;
+    }
+
+    .info {
+      text-align: 16px;
+      line-height: 64px;
+      color: rgba(0, 0, 0, 0.45);
     }
   }
 }

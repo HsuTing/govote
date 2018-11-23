@@ -94,16 +94,19 @@ class Messages extends React.Component {
           ))}
         </Carousel>
 
-        <Pagination
-          className={styles.buttons}
-          current={Math.floor(pageIndex / 3) + 1}
-          total={users.length}
-          itemRender={this.paginationRender}
-          onChange={page => {
-            this.carouselRef.current.slick.slickGoTo((page - 1) * 3);
-          }}
-          pageSize={6}
-        />
+        <div className={styles.buttons}>
+          <Pagination
+            current={Math.floor(pageIndex / 3) + 1}
+            total={users.length}
+            itemRender={this.paginationRender}
+            onChange={page => {
+              this.carouselRef.current.slick.slickGoTo((page - 1) * 3);
+            }}
+            pageSize={6}
+          />
+
+          <div className={styles.info}>{users.length} 筆</div>
+        </div>
       </>
     );
   }
