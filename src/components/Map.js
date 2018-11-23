@@ -31,6 +31,10 @@ class Map extends React.PureComponent {
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v9',
       maxBounds: [[-180, -85], [180, 85]],
+      scrollZoom: false,
+      boxZoom: false,
+      doubleClickZoom: false,
+      touchZoomRotate: false,
     });
     const MIN_RADIUS = 5;
     const MAX_RADIUS = 30;
