@@ -222,7 +222,7 @@ class DataStore {
     log(chalk`{green schema ➜} count data`);
 
     const networkIds = [];
-    const data = items
+    const data = [...items]
       .reverse()
       .filter(({ metadata: { network_id }, answers }) => {
         if (networkIds.includes(network_id)) return false;
