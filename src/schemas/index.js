@@ -16,7 +16,7 @@ const resolvers = {
   Query: {
     data: async () => {
       try {
-        await cacheRequest.get();
+        cacheRequest.get();
 
         return dataStore.getData(cacheRequest.store);
       } catch (e) {
