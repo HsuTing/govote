@@ -1,6 +1,1739 @@
 {
-  "updateTime": "2018-11-24T10:58:37+08:00",
+  "updateTime": "2018-11-24T12:56:51+08:00",
   "items": [
+    {
+      "landing_id": "a39b675fc29cf930e40cb0b4ef8bcfda",
+      "token": "a39b675fc29cf930e40cb0b4ef8bcfda",
+      "response_id": "a39b675fc29cf930e40cb0b4ef8bcfda",
+      "landed_at": "2018-11-24T04:53:08Z",
+      "submitted_at": "2018-11-24T04:56:49Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 [FBAN/MessengerForiOS;FBAV/193.0.0.49.98;FBBV/132029873;FBDV/iPhone10,6;FBMD/iPhone;FBSN/iOS;FBSV/12.0;FBSS/3;FBCR/&#20013-&#33775-&#38651-&#20449-;FBID/phone;FBLC/zh_TW;FBOP/5]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "2c0af66e1a",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "高雄市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "汽車/機車",
+              "高鐵"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "1490"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "200"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "600"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "凱"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "只能加油了"
+        }
+      ]
+    },
+    {
+      "landing_id": "3a018dddaa190236ac554e9d44e43098",
+      "token": "3a018dddaa190236ac554e9d44e43098",
+      "response_id": "3a018dddaa190236ac554e9d44e43098",
+      "landed_at": "2018-11-24T04:51:41Z",
+      "submitted_at": "2018-11-24T04:56:12Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; HTC_2Q4D100 Build/OPR6.170623.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "8c152443be",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "高雄市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "臺中市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "客運"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "800"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "205"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "Miracl"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "自由平等 婚姻平權"
+        }
+      ]
+    },
+    {
+      "landing_id": "1823413a5109d52947263681f45db003",
+      "token": "1823413a5109d52947263681f45db003",
+      "response_id": "1823413a5109d52947263681f45db003",
+      "landed_at": "2018-11-24T04:38:59Z",
+      "submitted_at": "2018-11-24T04:40:00Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+        "platform": "other",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "6123d86ef4",
+        "browser": "default"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "徒步"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "RERE"
+        }
+      ]
+    },
+    {
+      "landing_id": "7b25811a87022ef738082cac8e76a7f8",
+      "token": "7b25811a87022ef738082cac8e76a7f8",
+      "response_id": "7b25811a87022ef738082cac8e76a7f8",
+      "landed_at": "2018-11-24T04:15:34Z",
+      "submitted_at": "2018-11-24T04:16:45Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.4.1;FBSS/2;FBCR/&#36960-&#20659-&#38651-&#20449-;FBID/phone;FBLC/zh_TW;FBOP/5;FBRV/132034190]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "9e01b97aa6",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "徒步"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "Allen"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "Good"
+        }
+      ]
+    },
+    {
+      "landing_id": "843af5ca2db866eb515811eeab26dedf",
+      "token": "843af5ca2db866eb515811eeab26dedf",
+      "response_id": "843af5ca2db866eb515811eeab26dedf",
+      "landed_at": "2018-11-24T04:06:05Z",
+      "submitted_at": "2018-11-24T04:07:35Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 Safari Line/8.17.0",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "a1883ab0b8",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "新北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "高雄市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "高鐵"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "4000"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "260"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "358"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "光光"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "加油 大家沒有不同"
+        }
+      ]
+    },
+    {
+      "landing_id": "1352e08da070ac41f53327b27f6fa105",
+      "token": "1352e08da070ac41f53327b27f6fa105",
+      "response_id": "1352e08da070ac41f53327b27f6fa105",
+      "landed_at": "2018-11-24T03:59:37Z",
+      "submitted_at": "2018-11-24T04:01:47Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "8f434b155a",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "彰化縣"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "高鐵"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "1400"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "3hr"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "210"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "Chu"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "Fighting"
+        }
+      ]
+    },
+    {
+      "landing_id": "f59986f6d7aea65040ba87f70495a9c3",
+      "token": "f59986f6d7aea65040ba87f70495a9c3",
+      "response_id": "f59986f6d7aea65040ba87f70495a9c3",
+      "landed_at": "2018-11-24T03:49:04Z",
+      "submitted_at": "2018-11-24T03:50:20Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "bdcb13fbad",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "新北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "新北市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "徒步"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "0.5"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "小瘦"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "為了更好的台灣！ 加油！"
+        }
+      ]
+    },
+    {
+      "landing_id": "5dc0a02336f0c977f76b6d8d9b986546",
+      "token": "5dc0a02336f0c977f76b6d8d9b986546",
+      "response_id": "5dc0a02336f0c977f76b6d8d9b986546",
+      "landed_at": "2018-11-24T03:46:43Z",
+      "submitted_at": "2018-11-24T03:49:20Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/12.0;FBSS/2;FBCR/&#20013-&#33775-&#38651-&#20449-;FBID/phone;FBLC/zh_TW;FBOP/5;FBRV/132034190]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "5d42743eaf",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "亞洲地區(中國,日本,韓國,越南...)"
+          }
+        },
+        {
+          "field": {
+            "id": "W9Grb5GFuN6r",
+            "type": "short_text",
+            "ref": "8de505e3-d39d-477f-b17e-f483e45f1abc"
+          },
+          "type": "text",
+          "text": "菲律賓馬尼拉"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "高雄市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "飛機",
+              "高鐵"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "12000"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "1080"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "896.54"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "Elaine王天天"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "打造平權的理想世界！"
+        }
+      ]
+    },
+    {
+      "landing_id": "c7bdba690b8e991303e7a8f1fd4654c1",
+      "token": "c7bdba690b8e991303e7a8f1fd4654c1",
+      "response_id": "c7bdba690b8e991303e7a8f1fd4654c1",
+      "landed_at": "2018-11-24T03:39:20Z",
+      "submitted_at": "2018-11-24T04:02:12Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 [FBAN/FBIOS;FBAV/197.1.0.69.100;FBBV/130896868;FBDV/iPhone9,4;FBMD/iPhone;FBSN/iOS;FBSV/12.0;FBSS/3;FBCR/&#20013-&#33775-&#38651-&#20449-;FBID/phone;FBLC/zh_TW;FBOP/5;FBRV/131758933]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "3e727ecf0b",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "桃園市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "高雄市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "捷運",
+              "高鐵"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "3500"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "210"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "170"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "Finko"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "愛之前人人平等"
+        }
+      ]
+    },
+    {
+      "landing_id": "df8031b1d257fe995640aced0127a8c8",
+      "token": "df8031b1d257fe995640aced0127a8c8",
+      "response_id": "df8031b1d257fe995640aced0127a8c8",
+      "landed_at": "2018-11-24T03:30:17Z",
+      "submitted_at": "2018-11-24T03:33:12Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 7.1.1; ASUS_Z01KD Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "c3b6702240",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "南投縣"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "客運"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "725"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "480"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "430"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "小貝"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "支持平權，人人平等"
+        }
+      ]
+    },
+    {
+      "landing_id": "d51d2145b2b2fc3f04a5d83290caa67a",
+      "token": "d51d2145b2b2fc3f04a5d83290caa67a",
+      "response_id": "d51d2145b2b2fc3f04a5d83290caa67a",
+      "landed_at": "2018-11-24T03:22:27Z",
+      "submitted_at": "2018-11-24T03:23:28Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "d42945279a",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "臺北市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "徒步"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "20"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "Gwen"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "台灣萬歲"
+        }
+      ]
+    },
+    {
+      "landing_id": "f4afc1f32868bb69718d3ba8771ac186",
+      "token": "f4afc1f32868bb69718d3ba8771ac186",
+      "response_id": "f4afc1f32868bb69718d3ba8771ac186",
+      "landed_at": "2018-11-24T03:19:42Z",
+      "submitted_at": "2018-11-24T03:28:03Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; ASUS_X00QD Build/OPR1.170623.032) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.91 Mobile Safari/537.36",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "297ce35c4a",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺南市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "雲林縣"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "客運",
+              "徒步",
+              "火車"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "650"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "360"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "102"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "熊貓桑"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "婚姻平權，讓愛沒有差異，同志教育，讓孩子瞭解且尊重不同性傾向，性別認同，性別特質！"
+        }
+      ]
+    },
+    {
+      "landing_id": "21ee878569e2600e3622c5714850da33",
+      "token": "21ee878569e2600e3622c5714850da33",
+      "response_id": "21ee878569e2600e3622c5714850da33",
+      "landed_at": "2018-11-24T03:17:52Z",
+      "submitted_at": "2018-11-24T03:19:25Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi Note 5 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/192.0.0.34.85;]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "d09c280d21",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺中市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "苗栗縣"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "火車"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "198"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "119"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "108"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "RAYN"
+        }
+      ]
+    },
+    {
+      "landing_id": "ec32071ac2b27246f0e08720b6207a70",
+      "token": "ec32071ac2b27246f0e08720b6207a70",
+      "response_id": "ec32071ac2b27246f0e08720b6207a70",
+      "landed_at": "2018-11-24T03:16:51Z",
+      "submitted_at": "2018-11-24T03:19:51Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; H4133 Build/50.1.A.13.83; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "40bf3b98ce",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺南市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "桃園市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "客運",
+              "徒步",
+              "腳踏車"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "1150"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "550"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "552"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "PatT"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "Vote for Taiwan. "
+        }
+      ]
+    },
+    {
+      "landing_id": "c8f1c0186bf009717bd3ab6f521c2714",
+      "token": "c8f1c0186bf009717bd3ab6f521c2714",
+      "response_id": "c8f1c0186bf009717bd3ab6f521c2714",
+      "landed_at": "2018-11-24T03:08:50Z",
+      "submitted_at": "2018-11-24T03:10:21Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 7.0; F8332 Build/39.2.A.0.417; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/193.0.0.45.101;]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "15f0e54a55",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "新北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "高雄市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "高鐵",
+              "徒步",
+              "捷運"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "2980"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "480"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "700"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "HM"
+        }
+      ]
+    },
+    {
+      "landing_id": "588eed9b7508b559c8aff6970a22a48c",
+      "token": "588eed9b7508b559c8aff6970a22a48c",
+      "response_id": "588eed9b7508b559c8aff6970a22a48c",
+      "landed_at": "2018-11-24T03:05:13Z",
+      "submitted_at": "2018-11-24T03:08:08Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A404 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/12.0.1;FBSS/2;FBCR/&#20013-&#33775-&#38651-&#20449-;FBID/phone;FBLC/zh_TW;FBOP/5;FBRV/132034190]",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "4a008c33c0",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "臺南市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "南投縣"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "火車"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "998"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "360"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "300"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "麥麥"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "愛必勝"
+        }
+      ]
+    },
+    {
+      "landing_id": "be11270aa4866645a5baf91e9befc4ba",
+      "token": "be11270aa4866645a5baf91e9befc4ba",
+      "response_id": "be11270aa4866645a5baf91e9befc4ba",
+      "landed_at": "2018-11-24T03:04:44Z",
+      "submitted_at": "2018-11-24T03:08:04Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Linux; Android 6.0.1; E6653 Build/32.2.A.0.224; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 Line/8.6.2/IAB",
+        "platform": "mobile",
+        "referer": "https://harrison98.typeform.com/to/pJAGob",
+        "network_id": "37842b7d77",
+        "browser": "touch"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "BWgEwL363A7E",
+            "type": "multiple_choice",
+            "ref": "db43093f-80cb-49f2-bf9d-1e1b0821fdaf"
+          },
+          "type": "choice",
+          "choice": {
+            "label": "台灣及離島地區"
+          }
+        },
+        {
+          "field": {
+            "id": "fM9wILmNCM8x",
+            "type": "dropdown",
+            "ref": "fab3af2b-970c-4d48-af55-7dbad56067f2"
+          },
+          "type": "text",
+          "text": "新北市"
+        },
+        {
+          "field": {
+            "id": "HzfhM6dNeB4r",
+            "type": "dropdown",
+            "ref": "b6feb806-2f1d-4e71-a5e6-e8f34134bfea"
+          },
+          "type": "text",
+          "text": "桃園市"
+        },
+        {
+          "field": {
+            "id": "Ocj4a6DfONew",
+            "type": "multiple_choice",
+            "ref": "1bc18458-9f1f-4d41-9a8b-3f583cbb54a7"
+          },
+          "type": "choices",
+          "choices": {
+            "labels": [
+              "客運"
+            ]
+          }
+        },
+        {
+          "field": {
+            "id": "vg4vGGsJorHV",
+            "type": "short_text",
+            "ref": "6d0bcbae-937a-435a-9564-d7a78b4792d5"
+          },
+          "type": "text",
+          "text": "102"
+        },
+        {
+          "field": {
+            "id": "mRNioj4Xlsil",
+            "type": "short_text",
+            "ref": "67f05b89-605b-48ea-a5f0-a7a46c6006f5"
+          },
+          "type": "text",
+          "text": "80"
+        },
+        {
+          "field": {
+            "id": "NwbdNHzw6LGL",
+            "type": "short_text",
+            "ref": "ea69d4ee-f765-4d98-b699-8c20719b5d9e"
+          },
+          "type": "text",
+          "text": "55"
+        },
+        {
+          "field": {
+            "id": "YIICwiitp32K",
+            "type": "short_text",
+            "ref": "aacda15a-dab4-4c1c-b3f5-22e57e785954"
+          },
+          "type": "text",
+          "text": "板橋瑄瑄"
+        },
+        {
+          "field": {
+            "id": "URizHdjLcGb7",
+            "type": "short_text",
+            "ref": "97ace451-18fa-4d06-9823-dfb6340609e7"
+          },
+          "type": "text",
+          "text": "願雨過天青。"
+        }
+      ]
+    },
     {
       "landing_id": "4dc61cd5ec5e56a94385acefba9f1a4c",
       "token": "4dc61cd5ec5e56a94385acefba9f1a4c",
